@@ -1,0 +1,33 @@
+.p{
+  text-align: center;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  gap: 3rem;
+  padding: 3rem;
+}
+.or {
+  background:#15523e;
+  border-radius: 9px;
+  min-width: 100px;
+  color: white;
+  padding: 2cqmax;
+}
+.yala{
+  height:auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .p{
+    gap: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #wil {
+    line-height: 19px;
+    text-align: left;
+  }
+  .yala {
+    height: 300px;
+  }
+}
