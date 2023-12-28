@@ -7,3 +7,46 @@ p {
 .headlogos{
   margin-left: 5rem;
 }
+.grid {
+  display:flex;
+  flex-direction: column;
+  grid-auto-rows: 200px;
+  gap: 1rem;
+ }
+ .p{
+  font-size: 12px;
+ }
+  table,th,td{
+  border:2px solid;
+  border-collapse:collapse ;
+  padding:0.6rem;
+ }
+ th{
+  background:#10443e;
+ }
+ td{
+  background:#116057;
+ }
+ 
+ @media only screen and (max-width: 600px) {
+  th{
+    display: none;
+  }
+  td{
+    display: block;
+    border: 0;
+  }
+  td::before{
+    content: attr(data-cell);
+    font-weight: 700;
+  }
+  td:first-child{
+    padding-top: 2rem;
+  }
+  td:last-child{
+    padding-bottom: 2rem;
+  }
+  table{
+    border:1px solid ;
+  }
+ }

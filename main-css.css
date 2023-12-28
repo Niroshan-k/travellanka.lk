@@ -8,6 +8,7 @@
 }
 p{
   line-height: 2;
+  text-align: left;
 }
 body {
  color: white;
@@ -95,7 +96,7 @@ svg:hover{
 .nav-link {
  display: flex;
  align-items: center;
- height: 5rem;
+ height: 6rem;
  text-decoration: none;
  filter: grayscale(100%) opacity(0.7);
  transition:700ms;
@@ -227,7 +228,9 @@ svg:hover{
     top:0;
     width: 100%;
     height: 5rem;
+
   }
+
   .headlogos{
     margin-top: 5rem;
   }
@@ -256,13 +259,14 @@ svg:hover{
   }
 
   .nav-link {
+    width: 4rem;
     justify-content: center;
   }
   p{
     line-height: 1.2;
   }
   h1{
-    font-size: 30px;
+    font-size: 25px;
   }
   main {
     margin: 0;
@@ -278,7 +282,8 @@ svg:hover{
     height: 70px;
   }
   .name-logo{
-    transform: scale(0);
+    width: 0px;
+    height: 70px;
   }
  .footernav ul{
   flex-direction:column;
@@ -295,7 +300,7 @@ svg:hover{
     margin:0;
     padding:2px;
   }
-  .footer2>a>i{
+  .footer2 a i{
     transform: scale(0.6);
   }
 }
@@ -325,4 +330,5 @@ svg:hover{
  {
    left: 0px;
  }
+ 
 }
