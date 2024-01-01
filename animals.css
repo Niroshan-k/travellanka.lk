@@ -15,11 +15,21 @@
 .yala{
   height:auto;
 }
+hr{
+  margin: 4rem;
+}
+h1{
+  text-align: center;
+}
 .animals{
   display:grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  padding: 4rem;
+  padding: 2rem;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  margin: 4rem;
+
 
 }
 @media only screen and (max-width: 600px) {
@@ -36,5 +46,14 @@
   }
   .yala {
     height: 300px;
+  }
+  hr{
+    margin: 0px;
+  }
+  .animals{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
   }
 }

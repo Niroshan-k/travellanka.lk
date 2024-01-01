@@ -28,6 +28,7 @@ p {
   background:#116057;
  }
  
+ 
  @media only screen and (max-width: 600px) {
   th{
     display: none;
