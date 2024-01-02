@@ -140,7 +140,7 @@ ul,ol{
  /* paragraph inside flip card*/
  .flip {
   text-align: left;
-  line-height: 1.4;
+  line-height: 1.2;
   font-size:medium;
  }
  footer{
@@ -152,6 +152,10 @@ ul,ol{
  .ul li a:hover{
   text-decoration:underline;
   color: aqua;
+ }
+ #image{
+  font-size: small;
+  text-align: center;
  }
  @media only screen and (max-width: 600px) {
   .grid{

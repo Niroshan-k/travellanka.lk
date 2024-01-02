@@ -115,19 +115,21 @@ svg:hover{
  margin-left: 1rem;
  color: black;
 }
-.tooltip{
+.tooltip1{
   font-weight: 400;
   visibility: hidden;
   width: 90px;
   color: black;
   background:#c2fef1;
-  padding: 1px;
-  margin: 0rem;
-  margin-left: 1px;
+  padding: 1px; 
   border-radius: 10px;
-  position: absolute;
+  position:absolute;
   z-index: 1;
+  transform: translateX(160px);
  }
+.nav-item:hover .tooltip1{
+  visibility: visible;
+}
 
 .nav-link svg {
  width: 2rem;
@@ -242,15 +244,18 @@ svg:hover{
     top:0;
     width: 100%;
     height: 5rem;
+    overflow: visible;
 
   }
   .nav-link{
     margin: 0; 
   }
-  .nav-item:hover .tooltip{
-    visibility: visible;
+  .nav-item:hover .tooltip1{
+    visibility:hidden;
    }
-
+  .head-p{
+    font-size: medium;
+  } 
   .headlogos{
     margin-top: 5rem;
   }
@@ -307,11 +312,11 @@ svg:hover{
   }
  .footernav ul{
   flex-direction:column;
+  transform: scale(0.8);
   }
   .footernav ul li{
     width: 100%;
-    text-align: center;
-    margin: 10px;
+    text-align:center;
   }
   .footer2{
     width: 100%;
