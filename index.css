@@ -44,7 +44,7 @@ body{
  display: flex;
  flex-direction: column;
  gap: 10px;
- background: url("1710073.jpg");
+ background:#0f6083;
  background-position: center;
  background-attachment: fixed;
  background-size: cover;
@@ -151,8 +151,30 @@ a{
  text-align: center;
  border: 1px solid white;
 }
+.childs{
+  width: 100%;
+  height:100%;
+  background:url("Sri_Lankan_Leopard_\(Panthera_pardus_kotiya\)_.jpg");
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  border: 1px solid white;
+ }
 #check {
  display: none;
+}
+#a{
+  border: 1px solid;
+  border-radius: 10px;
+  background:black;
+  backdrop-filter: blur(10px);
+  
+}
+a:hover {
+  text-decoration: underline;
 }
 .icons {
  position: absolute;
@@ -161,7 +183,6 @@ a{
  cursor: pointer;
  display: none;
 }
-
 
 @media only screen and (max-width: 600px) {
  .grid{
