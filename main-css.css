@@ -115,6 +115,18 @@ svg:hover{
  margin-left: 1rem;
  color: black;
 }
+.tooltip{
+  font-weight: 400;
+  visibility: hidden;
+  width: 120px;
+  color: black;
+  background:#c2fef1;
+  padding: 1px;
+  margin: 1rem;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+ }
 
 .nav-link svg {
  width: 2rem;
@@ -231,6 +243,9 @@ svg:hover{
     height: 5rem;
 
   }
+  .nav-item:hover .tooltip{
+    visibility: visible;
+   }
 
   .headlogos{
     margin-top: 5rem;
