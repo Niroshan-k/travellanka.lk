@@ -318,6 +318,8 @@ svg:hover{
   .footernav ul li{
     width: 100%;
     text-align:center;
+    line-height: 2rem;
+    
   }
   .footer2{
     width: 100%;

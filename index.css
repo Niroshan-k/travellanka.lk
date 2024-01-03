@@ -176,6 +176,18 @@ a{
 a:hover {
   text-decoration: underline;
 }
+#hiring{
+  background: url("hire.jpeg");
+  background-size: cover;
+}
+#tourism{
+  background: url("tourism.jpeg");
+  background-size: cover;
+}
+#hotels{
+  background: url("hotels.webp");
+  background-size: cover;
+}
 .icons {
  position: absolute;
  right: 4%;
