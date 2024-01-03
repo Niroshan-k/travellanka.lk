@@ -127,6 +127,7 @@ svg:hover{
   z-index: 1;
   transform: translateX(160px);
  }
+
 .nav-item:hover .tooltip1{
   visibility: visible;
 }
