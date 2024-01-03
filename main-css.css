@@ -254,6 +254,12 @@ svg:hover{
   .nav-item:hover .tooltip1{
     visibility:hidden;
    }
+  .nav-link:hover {
+  transform: scale(1);
+  transition: 500ms;
+  filter: grayscale(0%) opacity(1);
+  background:#47b298;
+  }
   .head-p{
     font-size: medium;
   } 
