@@ -4,7 +4,7 @@
   margin: 0px;
   padding: 0px;
   font-family: "Poppins",sans-serif;
-  box-sizing: border-box;
+  
 }
 p{
   line-height: 2;
@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
- background: #1e1e24;
+ background:#32745c;
 }
 
 body::-webkit-scrollbar-thumb {
