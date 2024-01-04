@@ -173,8 +173,12 @@ a{
   backdrop-filter: blur(100px);
   
 }
-a:hover {
-  text-decoration: underline;
+h1{
+  text-shadow: 1px 1px 7px black;
+}
+#a:hover {
+  color: black;
+  background: wheat;
 }
 #hiring{
   background: url("hire.jpeg");
