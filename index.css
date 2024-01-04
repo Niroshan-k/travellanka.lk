@@ -168,9 +168,9 @@ a{
 }
 #a{
   border: 1px solid;
-  border-radius: 10px;
+  border-radius: 7px;
   background:black;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(100px);
   
 }
 a:hover {
