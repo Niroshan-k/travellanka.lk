@@ -265,7 +265,7 @@ h1{
   overflow: hidden;
   transition: .3s ease;
  }
- #check:checked~.navbar{
+ #check:checked~ .navbar{
   height: 12rem;
  }
  .navbar a{
