@@ -32,7 +32,12 @@ p {
   border: 0px;
   width: 100%;
  }
- 
+ .img-map{
+  display:flex;
+  flex-direction: row;
+  margin: 1rem;
+  width: 100%;
+ }
  @media only screen and (max-width: 600px) {
   th{
     display: none;
@@ -40,6 +45,9 @@ p {
   td{
     display: block;
     border: 0;
+  }
+  iframe{
+    width:100%;
   }
   td::before{
     content: attr(data-cell);
@@ -53,5 +61,6 @@ p {
   }
   table{
     border:1px solid ;
+    width: 100%;
   }
  }
