@@ -30,6 +30,9 @@ h1{
   border-radius: 10px;
   margin: 4rem;
 }
+a{
+  text-decoration: none;
+}
 input{
   height: 2rem;
   width: 5rem;
@@ -37,6 +40,21 @@ input{
   border: 0px;
   background: #c2fef1;
 }
+button{
+  padding: 5px 5px;
+  outline: none;
+  border: none;
+  background: #04251a;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow:0 2px #c2fef1
+}
+
+button:active{
+  box-shadow: 0 2px #15523e;
+  transform: translateY(4px);
+}
+
 @media only screen and (max-width: 600px) {
   .p{
     gap: 1rem;
