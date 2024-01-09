@@ -29,6 +29,14 @@ iframe{
  animation-delay: 0s;
  animation-iteration-count: infinite;
 }
+
+.class{
+ margin: 4rem;
+ padding: 1rem;
+ border-radius: 10px;
+ box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
 @keyframes yala{
  0% {background: url("yala1.jpeg");
   background-size: cover;
@@ -66,6 +74,9 @@ iframe{
  .grid{
   display: flex;
   flex-direction: column;
+  margin: 1rem;
+ }
+ .class{
   margin: 1rem;
  }
  

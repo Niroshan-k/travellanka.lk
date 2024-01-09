@@ -33,6 +33,26 @@ img{
  transform:600ms;
 }
 
+a{
+ text-decoration: none;
+}
+
+button{
+ margin-left: 4rem;
+ padding: 5px 5px;
+ outline: none;
+ border: none;
+ background: #04251a;
+ border-radius: 10px;
+ cursor: pointer;
+ box-shadow:0 2px #c2fef1
+}
+
+button:active{
+ box-shadow: 0 2px #15523e;
+ transform: translateY(4px);
+}
+
 .animation{
  background: url("safari.png"); 
  background-size: cover;
@@ -57,3 +77,24 @@ img{
   background-size: cover;
   }
  }
+
+
+ @media only screen and (max-width: 600px) {
+
+  main{
+   margin: 0;
+  }
+  .grid{
+   margin: 1rem;
+  }
+  h1{
+   margin: 1rem;
+  }
+  .head-txt{
+   font-size: 35px;
+  }
+  button{
+   margin-left: 1rem;
+  }
+
+ } 
