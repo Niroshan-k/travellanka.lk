@@ -1,1 +1,9 @@
-{"theme_color":"#f4f3f7","background_color":"#383839","icons":[{"purpose":"maskable","sizes":"512x512","src":"icon512_maskable.png","type":"image/png"},{"purpose":"any","sizes":"512x512","src":"icon512_rounded.png","type":"image/png"}],"orientation":"any","display":"browser","dir":"auto","lang":"en-GB","name":"Travel LK","short_name":"Trav.lk","start_url":"index.html","description":"Travel Lanka (pvt)Ltd."}
+{"theme_color":"#f4f3f7",
+ "background_color":"#383839",
+ "icons":[{"purpose":"maskable","sizes":"512x512","src":"/icon512_maskable.png","type":"image/png"},{"purpose":"any","sizes":"512x512","src":"/icon512_rounded.png","type":"image/png"}],
+ "orientation":"any","display":"standalone",
+ "dir":"auto","lang":"en-GB",
+ "name":"Travel LK",
+ "short_name":"Trav.lk",
+ "start_url":"/index.html",
+ "description":"Travel Lanka (pvt)Ltd."}
