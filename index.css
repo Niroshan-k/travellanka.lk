@@ -33,18 +33,16 @@ a{
  height: 200px;
 }
 .head {
- text-align: center;
- font-size:70px;
  color: white;
- padding: 2px;
- text-shadow: 1px 1px 7px white;
+ width: 100%;
+ 
 }
 body{
  color: white;
  display: flex;
  flex-direction: column;
  gap: 10px;
- background:#0f6083;
+ background:url("vecteezy_abstract-blue-fluid-wave-background_17798503.jpg");
  background-position: center;
  background-attachment: fixed;
  background-size: cover;
@@ -267,6 +265,9 @@ h1{
  }
  #check:checked~ .navbar{
   height: 12rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, .4);
  }
  .navbar a{
   display:block;

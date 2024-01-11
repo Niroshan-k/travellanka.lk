@@ -7,6 +7,11 @@ p {
 .headlogos{
   margin-left: 5rem;
 }
+.section{
+  background: #10443e;
+  padding: 1rem;
+  border-radius: 8px;
+}
 .grid {
   display:flex;
   flex-direction: column;

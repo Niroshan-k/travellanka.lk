@@ -127,7 +127,13 @@ svg:hover{
   z-index: 1;
   transform: translateX(160px);
  }
-
+.image{
+  visibility: hidden;
+  color: black;
+}
+.navbar:hover .image{
+  visibility: visible;
+}
 .nav-item:hover .tooltip1{
   visibility: visible;
 }
