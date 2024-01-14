@@ -158,7 +158,10 @@ svg:hover{
  transform: rotate(90deg);
  transition:500ms;
 }
-
+.footer-logo{
+  width: 300px;
+  height: 5rem;
+}
 
 .logo-text
 {
