@@ -12,7 +12,7 @@ p{
 main{
  padding:2rem;
  background:transparent;
- backdrop-filter: blur(10px);
+ backdrop-filter: blur(0px);
 
 }
 a{
@@ -26,17 +26,18 @@ a{
  margin-top: 5rem;
  padding: 10px;
  background:transparent;
- backdrop-filter: blur(10px);
+ backdrop-filter: blur(0px);
  background-position: center;
  background-attachment: fixed;
  background-size: cover;
  height: 200px;
+ text-align: center;
 }
 .head {
  color: white;
- width: 100%;
- 
+ width: 500px;
 }
+
 body{
  color: white;
  display: flex;
@@ -83,6 +84,13 @@ i {
 a{
  color: white;
 }
+
+.vision p{
+  padding: 3rem;
+  text-align: center;
+  font-size: 12px;
+}
+
 .footer2 a{
  font-size: 2em;
  padding:1rem;
@@ -205,7 +213,7 @@ h1{
   grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
  }
  .head{
-  font-size: 40px;
+  width: 350px;
  }
  p{
   text-align: left;
