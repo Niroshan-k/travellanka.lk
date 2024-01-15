@@ -6,10 +6,12 @@
   font-family: "Poppins",sans-serif;
   
 }
+
 p{
   line-height: 2;
   text-align: left;
 }
+
 body {
  color: white;
  background:#32745c;
@@ -33,27 +35,23 @@ body::-webkit-scrollbar-thumb {
 main {
  margin-left: 5rem;
 }
+
 h1{
  font-size: 30px;
 }
+
 a {
  color: white;
 }
+
 img{
  width: 100%;
  height: 100%;
  border-radius: 10px;
 }
-footer{
- padding:15px;
- margin-top: auto;
- margin-left: 5rem;
- background:#10443e;
- text-align: center;
- align-items: center;
- text-decoration: none;
-}
 
+
+/*navbar */
 
 .navbar {
  position:fixed;
@@ -61,7 +59,6 @@ footer{
  transition: width 600ms ease;
  overflow: scroll;
 }
-
 .navbar-nav {
  list-style: none;
  padding: 0;
@@ -70,10 +67,8 @@ footer{
  flex-direction: column;
  align-items: center;
  height: 100%;
- background:#c2fef1;
- 
+ background:#c2fef1; 
 }
-
 .nav-item {
  width: 100%;
 }
@@ -91,8 +86,6 @@ svg:hover{
   60% { rotate: -25deg;}
   100% { rotate: 0deg;}
 }
-
-
 .nav-link {
  display: flex;
  align-items: center;
@@ -101,15 +94,12 @@ svg:hover{
  filter: grayscale(100%) opacity(0.7);
  transition:700ms;
 }
-
 .nav-link:hover {
  transform: scale(1.03);
  transition: 500ms;
  filter: grayscale(0%) opacity(1);
  background:#47b298;
 }
-/* icons and text */
-
 .link-text {
  display: none;
  margin-left: 1rem;
@@ -145,12 +135,8 @@ svg:hover{
 }
 
 .logo {
- font-weight: bold;
- text-transform: uppercase;
  margin-bottom: 1rem;
  text-align: center;
- font-size: 1.5rem;
- letter-spacing: 0.3ch;
  width: 100%;
 }
 
@@ -161,6 +147,7 @@ svg:hover{
 .footer-logo{
   width: 300px;
   height: 5rem;
+  
 }
 
 .logo-text
@@ -178,8 +165,9 @@ svg:hover{
  display: none;
 }
 
-/*#15523e
-/* logos */
+
+/* header */
+
 .headlogos {
  display:flex;
  margin-left: 5rem;
@@ -203,6 +191,17 @@ svg:hover{
 
 
 /* footer */
+
+footer{
+  padding:15px;
+  margin-top: auto;
+  margin-left: 5rem;
+  background:#10443e;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+ }
+
 .footer2 a{
  font-size: 2em;
  padding:1rem;
