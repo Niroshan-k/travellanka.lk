@@ -273,7 +273,6 @@ h1{
  }
  #check:checked~ .navbar{
   height: 12rem;
-  margin-top: 1rem;
   border-radius: 10px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, .4);
  }
