@@ -34,6 +34,56 @@ nav{
  display: none;
 }
 
+.grid {
+ display:grid;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ grid-auto-rows: 200px;
+ grid-auto-flow: dense;
+ align-items: center;
+ padding: 10px;
+ gap: 1rem;
+}
+.child {
+ width: 100%;
+ height:100%;
+ background:transparent;
+ backdrop-filter: blur(10px);
+ background-position: center;
+ vertical-align: middle;
+ border-radius: 10px;
+ align-items: center;
+ text-align: center;
+ border: 1px solid ;
+}
+.childs{
+  width: 100%;
+  height:100%;
+  background:url("Sri_Lankan_Leopard_\(Panthera_pardus_kotiya\)_.jpg");
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
+ }
+ #a:hover {
+  color: black;
+  background: wheat;
+}
+#hiring{
+  background: url("hire.jpeg");
+  background-size: cover;
+}
+#tourism{
+  background: url("tourism.jpeg");
+  background-size: cover;
+}
+#hotels{
+  background: url("hotels.webp");
+  background-size: cover;
+}
+
 @media only screen and (max-width: 600px) {
  .icons{
   display:inline-flex;

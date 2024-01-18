@@ -6,10 +6,10 @@
   <title>Travel lanka(pvt)Ltd.</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="small_css_for_index.css">
 </head>
 
-<nav>
+<nav class="fixed mt-0">
   <img src="20231226_172656.png" class="logo">
 
   <input type="checkbox" id="check">
@@ -19,19 +19,19 @@
   </label>
   <section class="navbar">
     <a href="index.html" style="--i:0;">Home</a>
-    <a href="" style="--i:1;">About</a>
-    <a href="" style="--i:2;">Services</a>
-    <a href="" style="--i:3;">Contact</a>
+    <a href="aboutus.html" style="--i:1;">About</a>
+    <a href="services.html" style="--i:2;">Services</a>
+    <a href="contact.html" style="--i:3;">Contact</a>
   </section>
 </nav>
 
 
-<body class="bg-emerald-800 bg-cover bg-fixed bg-cente" style="background: url(vecteezy_abstract-blue-fluid-wave-background_17798503.jpg);">
-  <section class="flex w-full min-h-screen justify-center items-center p-8">
-    <section class="flex flex-col space-y-6 backdrop-blur-[50px] drop-shadow-lg w-full max-w-4xl p-8 rounded-xl shadow-lg text-black md:flex-row md:space-x-6 md:space-y-0">
+<main class="bg-cover bg-fixed bg-center pt-20" style="background: url(vecteezy_abstract-blue-fluid-wave-background_17798503.jpg);">
+  <section class="flex w-full min-h-screen justify-center items-center p-8 md:mt-3">
+    <section class="flex flex-col space-y-6 backdrop-blur-[50px] drop-shadow-lg w-full max-w-4xl p-8 rounded-xl shadow-lg text-black md:flex-row md:space-x-6 md:space-y-5">
       <section class="flex flex-col space-y-8 justify-between">
-        <section class="space-y-4">
-          <h1 class="font-bold text-4xl tracking-wide">Contact Us</h1>
+        <section class="space-y-8">
+          <h1 class="font-bold text-5xl tracking-wide">Contact Us</h1>
           <p class="text-black-200"><i class="fa-solid fa-quote-left">&nbsp;</i>Unlocking Sri Lanka's Wonders: We envision being the gateway to unforgettable experiences, connecting travelers with the rich culture, stunning landscapes, and warm hospitality of Sri Lanka. Your journey, our passion.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
         </section>
         <section class="flex flex-col space-y-4">
@@ -57,7 +57,7 @@
         </section>
       </section>
       <section>
-        <section class="rounded-xl p-8 md:w-80">
+        <section class="rounded-xl p-8 md:w-80 ring-1 ring-black">
           <form action="" class="flex flex-col space-y-4 md:self-end">
             <section>
               <label for="" class="text-sm font-bold">Name :</label>
@@ -83,6 +83,6 @@
   <section class="bg-black text-white text-center">
     <p>&copy;2024 Travel Lanka(pvt)Ltd.</p>
   </section>
-  
-</body>
+</main>  
+
 </html>
