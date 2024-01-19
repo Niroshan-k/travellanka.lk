@@ -18,10 +18,17 @@ main{
 a{
  text-decoration: none;
 }
+h1{
+  text-shadow: 1px 1px 7px black;
+}
+
+/* main logo */
 .logo{
  height: 5rem;
  margin-left:0px;
 }
+
+/*company logo */
 .header{
  margin-top: 5rem;
  padding: 10px;
@@ -33,6 +40,7 @@ a{
  height: 200px;
  text-align: center;
 }
+/*company logo image */
 .head {
  color: white;
  width: 500px;
@@ -48,14 +56,14 @@ body{
  background-attachment: fixed;
  background-size: cover;
 }
+/* nav bar texts */
 .navbar a {
  position: relative;
  text-decoration: none;
  margin-left: 20px;
 }
-.navbar a:hover{
- transform: scale(1.4);
-}
+
+/*nav bar */
 nav{
  position: fixed;
  width: 100%;
@@ -78,18 +86,24 @@ footer{
  text-decoration: none;
  color: white;
 }
+/*icon */
 i {
  color:white;
 }
+
 a{
  color: white;
 }
+
+/*footer */
 
 .vision p{
   padding: 3rem;
   text-align: center;
   font-size: 12px;
 }
+
+/*footer icons */
 
 .footer2 a{
  font-size: 2em;
@@ -106,10 +120,13 @@ a{
  opacity: 1;
  text-shadow: 1px 1px 2px white;
 }
+
+/* icons */
 .footer a i {
  font-size: 2em;
  opacity: 0.5;
 }
+/* text in footer */
 .footernav {
  margin: 30px 0;
 }
@@ -132,10 +149,14 @@ a{
  opacity: 1.5;
  text-shadow: 1px 1px 7px white;
 }
+
+/* copyright */
 .foterbottom p{
  margin-top: auto;
  text-align: center;
 }
+
+/*services grid */
 .grid {
  display:grid;
  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -169,9 +190,13 @@ a{
   text-align: center;
   border: 1px solid white;
  }
+
+/* in desktop mode not showing*/ 
 #check {
  display: none;
 }
+
+/*dicover more button */
 #a{
   border: 1px solid;
   border-radius: 7px;
@@ -179,13 +204,12 @@ a{
   backdrop-filter: blur(100px);
   
 }
-h1{
-  text-shadow: 1px 1px 7px black;
-}
+
 #a:hover {
   color: black;
   background: wheat;
 }
+/*sub-section in grid*/
 #hiring{
   background: url("hire.jpeg");
   background-size: cover;
@@ -198,6 +222,8 @@ h1{
   background: url("hotels.webp");
   background-size: cover;
 }
+
+/*only showing in mobile version, this is a label for hamburger icon and close icon*/
 .icons {
  position: absolute;
  right: 4%;

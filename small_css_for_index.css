@@ -21,7 +21,6 @@ nav{
  padding: 20px 10px;
 
 }
-
 .navbar a {
 
  position: relative;
@@ -29,12 +28,10 @@ nav{
  margin-left: 20px;
 
 }
-
 .navbar a:hover{
 
  transform: scale(1.4);
 }
-
 .logo{
 
  height: 5rem;
