@@ -6,6 +6,9 @@
  padding: 0;
  box-sizing: border-box;
 }
+/*:root{
+  --color : red;
+}*/
 p{
  text-align: center;
 }
@@ -51,11 +54,13 @@ body{
  display: flex;
  flex-direction: column;
  gap: 10px;
+ /*background:var(--color);*/
  background:url("vecteezy_abstract-blue-fluid-wave-background_17798503.jpg");
  background-position: center;
  background-attachment: fixed;
  background-size: cover;
 }
+
 /* nav bar texts */
 .navbar a {
  position: relative;
