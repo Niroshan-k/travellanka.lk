@@ -28,7 +28,7 @@ h1{
   text-align: center;
   color: white;
   text-shadow: 1px 1px 2px white;
-  font-family: 'Henny Penny', system-ui;
+  Font-family: 'Young Serif', serif;
   margin: 3rem;
 
 }
@@ -36,6 +36,7 @@ h1{
 .head-p{
   font-family: 'Young Serif', serif;
   text-align: center;
+  color: white;
   backdrop-filter: blur(10px);
   padding: 2rem;
 }
@@ -155,6 +156,7 @@ ul,ol{
  
  .flip-card-back {
   backdrop-filter:blur(10px);
+  padding: 1rem;
   color: white;
   transform: rotateX(180deg);
  }

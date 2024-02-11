@@ -6,11 +6,14 @@
  padding: 0;
  box-sizing: border-box;
 }
-/*:root{
-  --color : red;
-}*/
+
+:root{
+  --color:red;
+}
+
 p{
  text-align: center;
+ color: #59482a;
 }
 main{
  padding:2rem;
@@ -45,7 +48,6 @@ h1{
 }
 /*company logo image */
 .head {
- color: white;
  width: 500px;
 }
 
@@ -54,8 +56,7 @@ body{
  display: flex;
  flex-direction: column;
  gap: 10px;
- /*background:var(--color);*/
- background:url("vecteezy_abstract-blue-fluid-wave-background_17798503.jpg");
+ background:#e0d8cd;
  background-position: center;
  background-attachment: fixed;
  background-size: cover;
@@ -76,8 +77,8 @@ nav{
  display: flex;
  justify-content: space-between;
  z-index: 100;
- background: black;
- color: white;
+ background:#AD956D;
+ color: #AD956D;
  align-items: center;
  padding: 20px 10px;
 }
@@ -85,19 +86,19 @@ nav{
 footer{
  padding:15px;
  margin-bottom:0rem;
- background:black;
+ background:#AD956D;
  text-align: center;
  align-items: center;
  text-decoration: none;
- color: white;
+ color:#59482a;
 }
 /*icon */
 i {
- color:white;
+ color:#59482a;
 }
 
 a{
- color: white;
+ color:#59482a;
 }
 
 /*footer */
@@ -205,7 +206,7 @@ a{
 #a{
   border: 1px solid;
   border-radius: 7px;
-  background:black;
+  background:#e0d8cd;
   backdrop-filter: blur(100px);
   
 }

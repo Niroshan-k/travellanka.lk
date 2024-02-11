@@ -13,7 +13,7 @@ p{
 }
 
 body {
- color: white;
+ color:#c2fef1;
  background:#32745c;
  margin: 0;
  padding: 0;
@@ -156,9 +156,11 @@ svg:hover{
 
 
 /* header */
+header{
+  display: flex;
+}
 
 .headlogos {
- display:flex;
  margin-left: 5rem;
  background:#15523e;
  padding: 3px;
@@ -166,17 +168,11 @@ svg:hover{
 }
 
 .head-logo{
- width: 100px;
+ width: 120px;
  height: 100px;
  transition: 500ms;
 }
 
-
-.name-logo{
- width: 300px;
- margin-left:auto;
- margin-top:10px;
-}
 
 
 /* footer */
