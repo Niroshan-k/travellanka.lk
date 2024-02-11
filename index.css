@@ -78,7 +78,7 @@ nav{
  justify-content: space-between;
  z-index: 100;
  background:#AD956D;
- color: #AD956D;
+ color: #5d4f35;
  align-items: center;
  padding: 20px 10px;
 }
@@ -182,7 +182,7 @@ a{
  border-radius: 10px;
  align-items: center;
  text-align: center;
- border: 1px solid white;
+ box-shadow:2px 2px 6px rgba(0,0,0,0.4);
 }
 .childs{
   width: 100%;
@@ -194,7 +194,6 @@ a{
   border-radius: 10px;
   align-items: center;
   text-align: center;
-  border: 1px solid white;
  }
 
 /* in desktop mode not showing*/ 

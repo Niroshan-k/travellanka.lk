@@ -1,6 +1,6 @@
 body{
 
-  background: url("vecteezy_abstract-blue-fluid-wave-background_17798503.jpg");
+  background:#e0d8cd;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -15,8 +15,8 @@ nav{
  display: flex;
  justify-content: space-between;
  z-index: 100;
- background: black;
- color: white;
+ background:#AD956D;
+ color:#5d4f35;
  align-items: center;
  padding: 20px 10px;
 
