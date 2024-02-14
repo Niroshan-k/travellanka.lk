@@ -56,7 +56,7 @@ body{
  display: flex;
  flex-direction: column;
  gap: 10px;
- background:#e0d8cd;
+ background:url("background.jpg");
  background-position: center;
  background-attachment: fixed;
  background-size: cover;
@@ -77,28 +77,31 @@ nav{
  display: flex;
  justify-content: space-between;
  z-index: 100;
- background:#AD956D;
+ background:#8e7750;
  color: #5d4f35;
  align-items: center;
  padding: 20px 10px;
 }
 
+:root{
+  --color:#000000;
+}
 footer{
  padding:15px;
  margin-bottom:0rem;
- background:#AD956D;
+ background:#8e7750;
  text-align: center;
  align-items: center;
  text-decoration: none;
- color:#59482a;
+ color:var(--color)
 }
 /*icon */
 i {
- color:#59482a;
+ color:var(--color);
 }
 
 a{
- color:#59482a;
+ color:var(--color);
 }
 
 /*footer */
