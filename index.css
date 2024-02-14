@@ -1,19 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 *{
- font-family: "Poppins",sans-serif;
+font-family: 'Young Serif', serif;
  margin: 0;
  padding: 0;
  box-sizing: border-box;
 }
 
-:root{
-  --color:red;
-}
 
 p{
  text-align: center;
- color: #59482a;
+ font-weight:bold;
+ 
 }
 main{
  padding:2rem;
@@ -56,7 +54,7 @@ body{
  display: flex;
  flex-direction: column;
  gap: 10px;
- background:url("background.jpg");
+ background:url("vecteezy_business-presentation-background-with-brown-color_23179455.jpg");
  background-position: center;
  background-attachment: fixed;
  background-size: cover;
@@ -67,7 +65,14 @@ body{
  position: relative;
  text-decoration: none;
  margin-left: 20px;
+ background:url("scope.png");
+ background-size: cover;
+ padding: 1rem;
+ color: white;
+ font-weight: bolder;
+ text-shadow: 1px 1.5px 1px black;
 }
+
 
 /*nav bar */
 nav{
@@ -84,7 +89,8 @@ nav{
 }
 
 :root{
-  --color:#000000;
+  --color:#f5d9af;
+  --shadow :1px 1.5px 1px black; 
 }
 footer{
  padding:15px;
@@ -102,6 +108,17 @@ i {
 
 a{
  color:var(--color);
+ text-shadow: var(--shadow);
+}
+
+.blur{
+  font-family: 'Young Serif', serif;
+  font-size: 16px;
+  padding: 2rem;
+  line-height: 2rem;
+  border-radius: 10px;
+  background:rgba(0, 0, 0, .2);
+  backdrop-filter: blur(10px);
 }
 
 /*footer */
@@ -109,7 +126,9 @@ a{
 .vision p{
   padding: 3rem;
   text-align: center;
-  font-size: 12px;
+  font-size: 15px;
+  color: var(--color);
+  text-shadow: var(--shadow);
 }
 
 /*footer icons */
@@ -127,7 +146,7 @@ a{
 .footer2 a i:hover{
  transform: scale(1.5);
  opacity: 1;
- text-shadow: 1px 1px 2px white;
+ text-shadow: 1px 1px 1px black;
 }
 
 /* icons */
@@ -141,6 +160,7 @@ a{
 }
 .footernav ul li{
  list-style-type: none;
+ transition: 600ms;
 }
 .footernav ul {
  display: flex;
@@ -154,15 +174,19 @@ a{
  transition: 600ms;
  opacity: 0.6;
 }
+.footernav ul li:hover{
+ transform: scale(1.5);
+}
 .footernav ul li a:hover{
- opacity: 1.5;
- text-shadow: 1px 1px 7px white;
+  text-shadow: 1px 1px 7px white;
+  opacity: 1.5;
 }
 
 /* copyright */
 .foterbottom p{
  margin-top: auto;
  text-align: center;
+ color:#e4cca3;
 }
 
 /*services grid */
@@ -206,16 +230,17 @@ a{
 
 /*dicover more button */
 #a{
-  border: 1px solid;
-  border-radius: 7px;
-  background:#e0d8cd;
-  backdrop-filter: blur(100px);
-  
+  background:url("nav.png");
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1.5px 1px black;
+  padding: 1rem;
 }
 
 #a:hover {
   color: black;
-  background: wheat;
+  text-shadow:2px 2px 10px #e4c58e ;
 }
 /*sub-section in grid*/
 #hiring{
@@ -306,13 +331,15 @@ a{
   transition: .3s ease;
  }
  #check:checked~ .navbar{
-  height: 12rem;
+  height: 15rem;
   border-radius: 10px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, .4);
  }
  .navbar a{
   display:block;
-  margin: 1rem 0;
+  background: transparent;
+  padding: 0;
+  margin: 2rem 0;
   text-align: center;
   transform: translateY(-50px);
   transition: .3s ease;

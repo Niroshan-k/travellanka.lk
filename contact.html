@@ -17,6 +17,31 @@
   <link rel="stylesheet" href="small_css_for_index.css">
   
 </head>
+<script>
+ function emailform(){
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var massage = document.getElementById("massage").value;
+  var errorMessages = [];
+
+  if (name.trim() === ''){
+   errorMessages.push('Name is required');
+  }
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+   errorMessages.push('Invalid email address');
+  }
+  if (massage.trim() === ''){
+   errorMessages.push('massage is required')
+  }
+  if (errorMessages.length > 0) {
+      document.getElementById('errorMessages').innerHTML = errorMessages.join('<br>');
+  } else {
+      document.getElementById('errorMessages').innerHTML = '';
+      alert('Your massage have sended!');
+  }
+ }
+</script>
 
 <nav class="fixed mt-0">
   <img src="20231226_172656.png" class="logo">
@@ -73,21 +98,24 @@
           <form action="" class="flex flex-col space-y-4 md:self-end">
             <section>
               <label for="" class="text-sm font-bold">Name :</label>
-              <input type="text" class="shadow-md w-full rounded-md px-4 py-2 bg-transparent outline-none focus:ring-2 focus:ring-black mt-2">
+              <input type="text" class="shadow-md w-full rounded-md px-4 py-2 bg-transparent outline-none focus:ring-2 focus:ring-black mt-2" id="name">
             </section>
             <section>
               <label for="" class="text-sm font-bold">Email :</label>
-              <input type="email" class="shadow-md w-full rounded-md px-4 py-2 bg-transparent outline-none focus:ring-2 focus:ring-black mt-2">
+              <input type="email" class="shadow-md w-full rounded-md px-4 py-2 bg-transparent outline-none focus:ring-2 focus:ring-black mt-2" id="email">
             </section>
             <section>
               <label for="" class="text-sm font-bold">Message :</label>
               <textarea 
               rows="5"
-              class="shadow-md w-full bg-transparent rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-black mt-2">
+              class="shadow-md w-full bg-transparent rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-black mt-2" id="massage">
               </textarea>  
             </section>
-            <button class="inline-block self-end bg-stone-600 shadow-md text-white font-bold rounded-lg px-6 py-2 uppercase text-sm">send message</button>
+            <button class="inline-block self-end bg-stone-600 shadow-md text-white font-bold rounded-lg px-6 py-2 uppercase text-sm" onclick="emailform()">send message</button>
           </form>
+          <section id="errorMessages" style="color: red;">
+
+          </section>
         </section>
       </section>
   </section>
