@@ -22,6 +22,7 @@ h1{
   font-size: 30px;
 }
 
+
 /*main head word */
 #head-word{
   font-size: 60px;
@@ -179,12 +180,19 @@ ul,ol{
   text-decoration:underline;
   color: aqua;
  }
-
+ 
  #image{
   font-size: small;
   text-align: center;
  }
  @media only screen and (max-width: 600px) {
+  #home{
+    border-radius: 100%;
+    background:transparent;
+    box-shadow: 0px 0px 5px black;
+    margin:4px;
+  }
+  
   .grid{
    align-items: center;
    display:grid;

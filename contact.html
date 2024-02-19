@@ -62,7 +62,7 @@
 
 <main class="bg-cover bg-fixed bg-center pt-20">
   <section class="flex w-full min-h-screen justify-center items-center p-8 md:mt-3">
-    <section class="flex flex-col space-y-6 bg-stone-400 text-zinc-100 drop-shadow-lg w-full max-w-4xl p-8 rounded-xl shadow-lg text-black md:flex-row md:space-x-6 md:space-y-5">
+    <section class="flex flex-col space-y-6 backdrop-blur-[50px] text-zinc-100 drop-shadow-lg w-full max-w-4xl p-8 rounded-xl shadow-lg text-black md:flex-row md:space-x-6 md:space-y-5">
       <section class="flex flex-col space-y-8 justify-between">
         <section class="space-y-8">
           <h1 class="font-bold text-5xl tracking-wide">Contact Us</h1>
@@ -94,26 +94,27 @@
 
       <!-- contact form -->
       <section>
-        <section class="rounded-xl p-8 md:w-80 ring-1 ring-stone-500">
+        <section class="rounded-xl p-8 md:w-80 ring-2 ring-white">
           <form action="" class="flex flex-col space-y-4 md:self-end">
             <section>
               <label for="" class="text-sm font-bold">Name :</label>
-              <input type="text" class="shadow-md w-full rounded-md px-4 py-2 bg-transparent outline-none focus:ring-2 focus:ring-black mt-2" id="name">
+              <input type="text" class="shadow-md w-full rounded-md px-4 py-2 bg-transparent outline-white focus:ring-2 focus:ring-black mt-2" id="name">
             </section>
             <section>
               <label for="" class="text-sm font-bold">Email :</label>
-              <input type="email" class="shadow-md w-full rounded-md px-4 py-2 bg-transparent outline-none focus:ring-2 focus:ring-black mt-2" id="email">
+              <input type="email" class="shadow-md w-full rounded-md px-4 py-2 bg-transparent outline-white focus:ring-2 focus:ring-black mt-2" id="email">
             </section>
             <section>
               <label for="" class="text-sm font-bold">Message :</label>
               <textarea 
               rows="5"
-              class="shadow-md w-full bg-transparent rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-black mt-2" id="massage">
+              class="shadow-md w-full bg-transparent rounded-md px-4 py-2 outline-white focus:ring-2 focus:ring-black mt-2" id="massage">
               </textarea>  
             </section>
-            <button class="inline-block self-end bg-stone-600 shadow-md text-white font-bold rounded-lg px-6 py-2 uppercase text-sm" onclick="emailform()">send message</button>
+            <button class="inline-block self-end bg-black shadow-md text-white font-bold rounded-lg px-6 py-2 uppercase text-sm" onclick="emailform()">send message</button>
           </form>
-          <section id="errorMessages" style="color: red;">
+          <br>
+          <section id="errorMessages" class="text-white">
 
           </section>
         </section>
@@ -122,9 +123,9 @@
   </section>
 <!-- footer -->
 
-  <section class="bg-stone-600 text-white text-center">
+  <section class="footer">
     <p>&copy;2024 Travel Lanka(pvt)Ltd.</p>
   </section>
 </main>  
 
-</html>
+</html> 

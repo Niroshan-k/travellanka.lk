@@ -1,6 +1,6 @@
 body{
 
-  background:#e0d8cd;
+  background:url("3484.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -15,18 +15,36 @@ nav{
  display: flex;
  justify-content: space-between;
  z-index: 100;
- background:#AD956D;
- color:#5d4f35;
+ background:url("nav.jpeg");
+ background-size: cover;
+ color:white;
+ font-weight: bold;
  align-items: center;
  padding: 20px 10px;
 
 }
+.footer{
+  background: url("37101.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+.yaka{
+  width: 150px;
+}
+
 .navbar a {
-
- position: relative;
- text-decoration: none;
- margin-left: 20px;
-
+  position: relative;
+  text-decoration: none;
+  margin-left: 20px;
+  background:url("scope.png");
+  background-size: cover;
+  padding: 1rem;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 1px 1.5px 1px black;
+  font-family: 'Young Serif', serif;
 }
 .navbar a:hover{
 
@@ -76,7 +94,7 @@ nav{
  border-radius: 10px;
  align-items: center;
  text-align: center;
- border: 1px solid ;
+ border: 1px solid white;
 
 }
 
@@ -91,7 +109,7 @@ nav{
   border-radius: 10px;
   align-items: center;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid white;
 
  }
 
@@ -154,7 +172,9 @@ nav{
  }
  .navbar a{
   display:block;
-  margin: 1rem 0;
+  margin: 1rem;
+  padding: 0;
+  background: transparent;
   text-align: center;
   transform: translateY(-50px);
   transition: .3s ease;

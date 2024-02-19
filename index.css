@@ -54,7 +54,7 @@ body{
  display: flex;
  flex-direction: column;
  gap: 10px;
- background:url("vecteezy_business-presentation-background-with-brown-color_23179455.jpg");
+ background:url("3484.jpg");
  background-position: center;
  background-attachment: fixed;
  background-size: cover;
@@ -82,20 +82,22 @@ nav{
  display: flex;
  justify-content: space-between;
  z-index: 100;
- background:#8e7750;
+ background:url("nav.jpeg");
+ background-size: cover;
  color: #5d4f35;
  align-items: center;
  padding: 20px 10px;
 }
 
 :root{
-  --color:#f5d9af;
+  --color:#ffffff;
   --shadow :1px 1.5px 1px black; 
 }
 footer{
  padding:15px;
  margin-bottom:0rem;
- background:#8e7750;
+ background:url("37101.jpg");
+ background-size: cover;
  text-align: center;
  align-items: center;
  text-decoration: none;
@@ -106,9 +108,12 @@ i {
  color:var(--color);
 }
 
-a{
+ul li a{
  color:var(--color);
  text-shadow: var(--shadow);
+ background: black;
+ padding: 0.5rem;
+ border-radius: 15px;
 }
 
 .blur{
@@ -132,6 +137,10 @@ a{
 }
 
 /*footer icons */
+.footergrid{
+  display: flex;
+  flex-direction:row;
+}
 
 .footer2 a{
  font-size: 2em;
@@ -140,7 +149,6 @@ a{
  text-decoration: none;
 }
 .footer2 a i{
- opacity: 0.6;
  transition: 600ms;
 }
 .footer2 a i:hover{
@@ -172,7 +180,6 @@ a{
  text-decoration: none;
  font-size: 1em;
  transition: 600ms;
- opacity: 0.6;
 }
 .footernav ul li:hover{
  transform: scale(1.5);
@@ -227,6 +234,17 @@ a{
 #check {
  display: none;
 }
+.yaka{
+  width: 150px;
+  display: none;
+}
+.img{
+  width:100%;
+  height:20rem;
+}
+#img{
+  transform: rotateY(180deg);
+}
 
 /*dicover more button */
 #a{
@@ -272,16 +290,23 @@ a{
   grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
  }
  .head{
-  width: 350px;
+  width: 100%;
  }
  p{
   text-align: left;
  }
+ .img{
+  display: none;
+  }
+  .yaka{
+    display:inline;
+  }
  .header{
   height: 100px;
  }
  footer{
   padding: 1px;
+  background-size: cover;
  }
  .footernav{
   margin: 1px;
