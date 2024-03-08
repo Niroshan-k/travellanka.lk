@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Poppins",sans-serif;
-  box-sizing: border-box;
-}
+
 p{
   text-align: center;
   line-height: 2;
@@ -24,18 +19,17 @@ h1{
 
 
 /*main head word */
-#head-word{
+#headword{
   font-size: 60px;
   text-align: center;
   color: white;
   text-shadow: 1px 1px 2px white;
-  Font-family: 'Young Serif', serif;
   margin: 3rem;
 
 }
 /*main paragraph */
 .head-p{
-  font-family: 'Young Serif', serif;
+  
   text-align: center;
   color: white;
   backdrop-filter: blur(10px);
@@ -62,14 +56,13 @@ h1{
    max-height:100%;
    float: left;
 }
-#sub-head{
-  font-style: italic;
-}
+
 .text {
    font-size: 15px;
 }
 .sub-sec{
   text-align: left;
+  margin-left: 2rem;
 }
 #will{
   text-align: left;
@@ -189,7 +182,7 @@ ul,ol{
   #home{
     border-radius: 100%;
     background:transparent;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
     margin:4px;
   }
   
@@ -211,15 +204,20 @@ ul,ol{
   }
   .sub-sec{
     font-size: 12px;
+    margin-left:0;
   }
   #sub-head{
     font-size: 14px;
   }
   .head{
     margin-left: 0;
+    padding: 1rem;
   }
-  #head-word{
-    font-size: 35px;
+  .box {
+    padding: 1rem;
+  }
+  #headword{
+    font-size: 25px;
   }
   .head-p{
     font-size: 12px;

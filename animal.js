@@ -1,0 +1,56 @@
+fetch('animal.json')
+.then(Response => Response.json())
+.then(data => {
+
+ document.getElementById("head1").textContent = data.head1;
+ document.getElementById("head2").textContent = data.head2;
+ document.getElementById("head3").textContent = data.head3;
+ document.getElementById("headp1").textContent = data.headp1;
+ document.getElementById("headp2").textContent = data.headp2;
+ document.getElementById("h1").textContent = data.h1;
+ document.getElementById("h2").textContent = data.h2;
+ document.getElementById("h3").textContent = data.h3;
+ document.getElementById("h4").textContent = data.h4;
+ document.getElementById("h5").textContent = data.h5;
+ document.getElementById("h6").textContent = data.h6;
+ document.getElementById("h7").textContent = data.h7;
+ document.getElementById("h8").textContent = data.h8;
+ document.getElementById("h9").textContent = data.h9;
+ document.getElementById("h10").textContent = data.h10;
+ document.getElementById("h11").textContent = data.h11;
+ document.getElementById("h12").textContent = data.h12;
+ document.getElementById("h13").textContent = data.h13;
+ document.getElementById("h14").textContent = data.h14;
+ document.getElementById("h15").textContent = data.h15;
+ document.getElementById("h16").textContent = data.h16;
+ document.getElementById("h17").textContent = data.h17;
+ document.getElementById("h18").textContent = data.h18;
+ document.getElementById("h19").textContent = data.h19;
+ document.getElementById("h20").textContent = data.h20;
+ document.getElementById("p1").textContent = data.p1;
+ document.getElementById("p2").textContent = data.p2;
+ document.getElementById("p3").textContent = data.p3;
+ document.getElementById("p4").textContent = data.p4;
+ document.getElementById("p5").textContent = data.p5;
+ document.getElementById("p6").textContent = data.p6;
+ document.getElementById("p7").textContent = data.p7;
+ document.getElementById("p8").textContent = data.p8;
+ document.getElementById("p9").textContent = data.p9;
+ document.getElementById("p10").textContent = data.p10;
+ document.getElementById("p11").textContent = data.p11;
+ document.getElementById("p12").textContent = data.p12;
+ document.getElementById("p13").textContent = data.p13;
+ document.getElementById("p14").textContent = data.p14;
+ document.getElementById("p15").textContent = data.p15;
+ document.getElementById("p16").textContent = data.p16;
+ document.getElementById("p17").textContent = data.p17;
+ document.getElementById("p18").textContent = data.p18;
+ document.getElementById("p19").textContent = data.p19;
+ document.getElementById("p20").textContent = data.p20;
+ document.getElementById("footer1").textContent = data.footer1;
+ document.getElementById("footer2").textContent = data.footer2;
+ document.getElementById("footer3").textContent = data.footer3;
+ document.getElementById("footer4").textContent = data.footer4;
+ document.getElementById("footer5").textContent = data.footer5;
+
+})

@@ -4,7 +4,7 @@ body{
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  
+  font-family: 'Young Serif', serif;
 }
 
 nav{
@@ -30,9 +30,15 @@ nav{
   text-align: center;
   align-items: center;
 }
-.yaka{
-  width: 150px;
+img .yaka{
+  align-items: center;
+  justify-content: center;
 }
+.yaka {
+  height: 100px;
+}
+
+
 
 .navbar a {
   position: relative;

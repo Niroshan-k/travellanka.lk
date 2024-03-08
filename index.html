@@ -19,28 +19,69 @@
 
   <link rel="stylesheet" href="index.css">
   <title>travel lanka (Pvt)Ltd.</title>
+<script>
+  window.addEventListener("load", () => {
+    document.querySelector(".loader").classList.add("loader--hidden")
+  });
 
+  fetch('index.json')
+  .then(Response => Response.json())
+  .then(data => {
+    document.getElementById("page1").textContent = data.page1;
+    document.getElementById("page2").textContent = data.page2;
+    document.getElementById("page3").textContent = data.page3;
+    document.getElementById("page4").textContent = data.page4;
+    document.getElementById("p1").textContent = data.p1;
+    document.getElementById("p2").textContent = data.p2;
+    document.getElementById("p3").textContent = data.p3;
+    document.getElementById("wild").textContent = data.wild;
+    document.getElementById("tourism*").textContent = data.tourism;
+    document.getElementById("hiring*").textContent = data.hiring;
+    document.getElementById("hotels*").textContent = data.hotels;
+    document.getElementById("a").textContent = data.a;
+    document.getElementById("a1").textContent = data.a;
+    document.getElementById("a2").textContent = data.a;
+    document.getElementById("a3").textContent = data.a;
+    document.getElementById("footer1").textContent = data.footer1;
+    document.getElementById("footer2").textContent = data.footer2;
+    document.getElementById("footer3").textContent = data.footer3;
+    document.getElementById("footer4").textContent = data.footer4;
+    document.getElementById("vision").textContent = data.vision;
+    document.getElementById("footerbottm").textContent = data.footerbottm;
+  })
+</script>
 </head>
-
-<nav>
-  <img src="20231226_172656.png" class="logo" alt="logo">
-
-  <input type="checkbox" id="check">
-  <label for="check" class="icons">
-    <i class="fa-solid fa-bars" id="menu-icon"></i>
-    <i class="fa-solid fa-x" id="close-icon"></i>
-  </label>
-  <section class="navbar">
-    <a href="index.html" style="--i:0;">Home</a>
-    <a href="aboutus.html" style="--i:1;">About</a>
-    <a href="services.html" style="--i:2;">Services</a>
-    <a href="contact.html" style="--i:3;">Contact</a>
-  </section>
-</nav>
 
 <body>
   
+  <section class="loader">
+    <div>
+      <img src="—Pngtree—sri lankan fire dancer mask_6826719.png">
+    </div>
+    <br>
+    <div>
+      <h1>WELLCOME TO SRI LANKA</h1>
+    </div> 
+    <br> 
+  </section> 
+  
   <main>
+    <nav>
+      <img src="20231226_172656.png" class="logo" alt="logo">
+    
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <i class="fa-solid fa-x" id="close-icon"></i>
+      </label>
+      <section class="navbar">
+        <a href="index.html" style="--i:0;" id="page1"></a>
+        <a href="aboutus.html" style="--i:1;" id="page2"></a>
+        <a href="services.html" style="--i:2;" id="page3"></a>
+        <a href="contact.html" style="--i:3;" id="page4"></a>
+      </section>
+    </nav>
+    
     <section class="header">
       <img class="head" src="Picsart_23-12-26_21-01-43-775.png">
     </section>
@@ -48,11 +89,11 @@
     <!-- about us -->
     <section class="blur">
 
-      <p>Embark on an enchanting journey with Travel Lanka and discover the mesmerizing beauty of Sri Lanka, a tropical paradise that captivates the soul. As you traverse this island gem, be prepared to be spellbound by its diverse landscapes, from pristine beaches that stretch for miles to lush tea plantations nestled in the emerald hills. Immerse yourself in the rich cultural tapestry of ancient cities like Kandy and Anuradhapura, where history comes alive in the form of ancient temples and sacred relics.</p>
+      <p id="p1"></p>
       <br>
-      <p>Travel Lanka ensures an immersive experience, guiding you through the vibrant markets, where the aroma of exotic spices fills the air, and local artisans showcase their craftsmanship. Indulge in the delectable flavors of Sri Lankan cuisine, a symphony of spices and textures that will tantalize your taste buds.</p>
+      <p id="p2"></p>
        <br> 
-      <p>  Whether you seek adventure in the untamed wilderness of Yala National Park or seek tranquility in the misty landscapes of Ella, Travel Lanka promises an unforgettable odyssey. Let us be your gateway to a land of serendipity, where every moment is a celebration of life and nature's wonders. Travel Lanka, your passport to a voyage that transcends boundaries and beckons you to explore the magic of Sri Lanka.</p>
+      <p id="p3"></p>
       
     </section>
     <br>
@@ -61,31 +102,31 @@
    <section class="grid">
     <section class="childs">
       <br>
-      <h1>Wild Life In Sri Lanka</h1>
+      <h1 id="wild"></h1>
       <br>
       <br>
-      <a href="home.html" id="a">discover more</a>
+      <a href="home.html" id="a" class="a"></a>
     </section>
     <section class="child" id="tourism">
       <br>
-      <h1>Tourism Guide</h1>
+      <h1 id="tourism*"></h1>
       <br>
       <br>
-      <a href=""id="a">discover more</a>
+      <a href="" id="a1" class="a"></a>
     </section>
     <section class="child" id="hiring">
       <br>
-      <h1>Hiring Vehicles</h1>
+      <h1 id="hiring*"></h1>
       <br>
       <br>
-      <a href="" id="a">discover more</a>
+      <a href="" id="a2" class="a"></a>
     </section>
     <section class="child" id="hotels">
       <br>
-      <h1>Hotels</h1>
+      <h1 id="hotels*"></h1>
       <br>
       <br>
-      <a href="" id="a">discover more</a>
+      <a href="" id="a3" class="a"></a>
     </section>
     
    </section>
@@ -108,20 +149,20 @@
       </section>
       <section class="footernav">
         <ul>
-          <li><a href="">News</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="">Our Team</a></li>
+          <li><a href="" id="footer1"></a></li>
+          <li><a href="" id="footer2"></a></li>
+          <li><a href="contact.html" id="footer3"></a></li>
+          <li><a href="" id="footer4"></a></li>
         </ul>
       </section>
       <section class="vision">
         <!-- vision -->
 
-        <p><i class="fa-solid fa-quote-left">&nbsp;</i>Unlocking Sri Lanka's Wonders: We envision being the gateway to unforgettable experiences, connecting travelers with the rich culture, stunning landscapes, and warm hospitality of Sri Lanka. Your journey, our passion.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+        <p id="vision"><i class="fa-solid fa-quote-left">&nbsp;</i>&nbsp;<i class="fa-solid fa-quote-right"></i></p>
       </section>
       <section class="foterbottom">
         <img src="—Pngtree—sri lankan fire dancer mask_6826719.png" class="yaka">
-        <p>&copy;2023 Travel Lanka (Pvt)Ltd.</p>
+        <p id="footerbottm">&copy;</p>
       </section>  
     </section>
     <section>
@@ -130,6 +171,9 @@
   </section>
 
   </footer>
+
+
+
 
 </body>
 </html>
