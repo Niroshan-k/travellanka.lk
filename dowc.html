@@ -12,11 +12,9 @@
   <meta name="msapplication-TileColor" content="#000000">
   <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
 <body>
@@ -28,50 +26,53 @@
   <br>
 
 
-  <main>
+  <main x-data="main">
     <!-- main section about dowc -->
     <!-- content from department of wildlife website-->
 
     <section>
-      <h1 id="head-word"></h1>
+      <h1 id="head-word" x-text="headword"></h1>
 
         <br>
-        <h2 id="headtext"></h2>
+        <h2 id="headtext" x-text="headtext"></h2>
         <hr>
         <br>
-        <p id="p1"></p>
+        <p id="p1" x-text="p1"></p>
         <br>
-        <p id="p2"></p>
+        <p id="p2" x-text="p2"></p>
         <br>
-        <p id="p3"></p>
+        <p id="p3" x-text="p3"></p>
         <br>
-        <p id="p4"></p>
+        <p id="p4" x-text="p4"></p>
         <br>
-        <p id="p5"></p>
+        <p id="p5" x-text="p5"></p>
         <br>
-        <p id="p6"></p>
+        <p id="p6" x-text="p6"></p>
         <br>
-        <p id="p7"></p>
+        <p id="p7" x-text="p7"></p>
         <br>
-        <p id="p8"></p>
+        <p id="p8" x-text="p8"></p>
         <br>
-        <p id="p9"></p>
+        <p id="p9" x-text="p9"></p>
     </section>
 
     <!-- sub-sections -->
 
     <br>
-    <h1 id="head1"></h1>
-    <p id="p10">
+    <h1 id="head1" x-text="head1"></h1>
+    <p id="p10" x-text="p10">
 
     </p>
     <br>
-    <h3 id="head2"></h3>
+    <h3 id="head2" x-text="head2"></h3>
     <br>
     <ol id="protect">
+      <template x-for="item in protect">
+        <li x-text="item"></li>
+      </template>
     </ol>
     <br>
-    <h1 id="head3"></h1>
+    <h1 id="head3" x-text="head3"></h1>
   <br>  
 
 <!-- gallery -->
@@ -113,8 +114,8 @@
     </section>
   </section> 
   <br>
-  <h1>National Parks</h1>
-  <h3>most visited :</h3>
+  <h1 x-text="head4"></h1>
+  <h3 x-text="subhead1"></h3>
   <section class="grid">
     <section class="flip-card">
       <section class="flip-card-inner">
@@ -162,7 +163,7 @@
     </section>
   </section> 
   <br>
-  <h1>Jungle Corridor</h1>
+  <h1 x-text="head5"></h1>
   <br>
   <section class="grid">
     <section class="flip-card">
@@ -211,7 +212,7 @@
     </section>
   </section> 
   <br>
-  <h1>Marine National Park</h1>
+  <h1 x-text="head6"></h1>
   <br>
   <section class="grid">
     <section class="flip-card">
@@ -263,7 +264,7 @@
 
 <!-- map of department of wild conservation-->
 
-  <h1>Location :</h1>
+  <h1 x-text="location"></h1>
   <br>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4050785.3254483608!2d78.05800095985727!3d7.482357140298339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1703827881955!5m2!1sen!2slk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="map"></iframe>
   </main>
@@ -275,7 +276,7 @@
       <li class="logo">
         <a class="nav-link" href="index.html">
           <span class="link-text logo-text"><img class="image" src="travel.lanka.png"></span>
-          <svg class="logo1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4L224 214.3V256v41.7L52.5 440.6zM256 352V256 128 96c0-12.4 7.2-23.7 18.4-29s24.5-3.6 34.1 4.4l192 160c7.3 6.1 11.5 15.1 11.5 24.6s-4.2 18.5-11.5 24.6l-192 160c-9.5 7.9-22.8 9.7-34.1 4.4s-18.4-16.6-18.4-29V352z"/></svg>
+          <svg class="logo1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg>
         </a>
       </li>
 
@@ -332,16 +333,16 @@
       </section>
       <section class="footernav">
         <ul>
-          <li><a href="" id="footer1"></a></li>
-          <li><a href="" id="footer2"></a></li>
-          <li><a href="contact.html" id="footer3"></a></li>
-          <li><a href="" id="footer4"></a></li>
+          <li><a href="" >News Letter</a></li>
+          <li><a href="" >About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="">Our Team</a></li>
         </ul>
       </section>
       <br>
       <section class="foterbottom">
         <a href="index.html"><img class="footer-logo" src="Picsart_23-12-26_21-01-43-775.png"></a>
-        <p id="footer5"></p>
+        <p>Copyright &copy;2023 Travel Lanka (pvt)Ltd.</p>
       </section>
     </section>
   </footer>

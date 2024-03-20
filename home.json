@@ -17,7 +17,7 @@
  "fliphead6" : "Cherry barb",
  "flip1" : "The Sri Lankan junglefowl (Gallus lafayettii sometimes spelled Gallus lafayetii), also known as the Ceylon junglefowl or Lafayette's junglefowl, is a member of the Galliformes bird order which is endemic to Sri Lanka, where it is the national bird.",
  "flip2" : "The Sri Lankan elephant is native to Sri Lanka and one of three recognised subspecies of the Asian elephant. It is the type subspecies of the Asian elephant and was first described by Carl Linnaeus under the binomial Elephas maximus in 1758.",
- "flip3" : "Sri Lanka currently contains 185 species of reptiles, of which 60 are threatened and 115 are endemic. Most of the reptiles are snakes and the largest two are the mugger crocodile and saltwater crocodile.</",
+ "flip3" : "Sri Lanka currently contains 185 species of reptiles, of which 60 are threatened and 115 are endemic. Most of the reptiles are snakes and the largest two are the mugger crocodile and saltwater crocodile.",
  "flip4" : "Sri Lanka is home to 245 species of butterflies with 23 of these being endemic to the island.One Of the 245 species, 76, are listed as threatened nationally, while the Ceylon rose is designated as critically endangered.",
  "flip5" : "Taruga eques (common names: Günther's whipping frog, montane hour-glass tree-frog) is a species of frog in the family Rhacophoridae. It is endemic to the central hills of Sri Lanka.",
  "flip6" : "The cherry barb (Puntius titteya) is a tropical freshwater fish belonging to the family Cyprinidae. It is endemic to Sri Lanka, and introduced populations have become established in Mexico and Colombia.",
@@ -58,12 +58,7 @@
  "li15" : "Wasgamuwa National Park",
  "li16" : "Wilpattu National Park",
  "li17" : "Yala National Park",
- "animals" : "Seven animals you have to see in the Pearl of the Indian Ocean",
- "animallist" : ["Sri Lankan Leopard"," Sri Lankan Elephant","Sloth Bear","Blue Whale ","Black-necked Stork"," Saltwater Crocodile","Leatherback Sea Turtle"],
- "footer1" : "News",
- "footer2" : "About Us",
- "footer3" : "Contact Us",
- "footer4" : "Our Team",
- "footer5" : "Copyright &copy;2023 Travel Lanka (pvt)Ltd."
+ "animals7" : "Seven animals you have to see in the Pearl of the Indian Ocean",
+ "animallist" : ["Sri Lankan Leopard"," Sri Lankan Elephant","Sloth Bear","Blue Whale ","Black-necked Stork"," Saltwater Crocodile","Leatherback Sea Turtle"]
 
 }

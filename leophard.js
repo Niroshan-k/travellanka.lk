@@ -1,84 +1,97 @@
+const main = {
+};
+
 fetch('leophard.json')
 .then(Response => Response.json())
 .then(data => {
 
- document.getElementById("head1").textContent = data.head1;
- document.getElementById("p1").textContent = data.p1;
- document.getElementById("head2").textContent = data.head2;
- document.getElementById("p2").textContent = data.p2;
- document.getElementById("l1").textContent = data.l1;
- document.getElementById("l2").textContent = data.l2;
- document.getElementById("l3").textContent = data.l3;
+  main.head1 = data.head1;
+  main.head2 = data.head2;
+  main.head3 = data.head3;
+  main.head4 = data.head4;
+  main.head5 = data.head5;
+  main.head6 = data.head6;
+  main.head7 = data.head7;
+  main.head8 = data.head8;
+  main.head9 = data.head9;
+  main.head10 = data.head10;
+  main.head11 = data.head11;
+  main.head12 = data.head12;
+  main.p1 = data.p1;
+  main.p2 = data.p2;
+  main.p3 = data.p3;
+  main.p4 = data.p4;
+  main.p5 = data.p5;
+  main.p6= data.p6;
+  main.p7 = data.p7;
+  main.p8 = data.p8;
+  main.p9 = data.p9;
+  main.p10 = data.p10;
+  main.p11 = data.p11;
+  main.p12 = data.p12;
+  main.p13 = data.p13;
+  main.p14 = data.p14;
+  main.p15 = data.p15;
+  main.p16 = data.p16;
+  main.l1 = data.l1;
+  main.l2 = data.l2;
+  main.l3 = data.l3;
+  main.yala = data.yala;
+  main.wilpattu = data.wilpattu;
+  main.horton = data.horton;
+  main.threats = data.threats;
+  main.b1 = data.b1;
+  main.b2 = data.b2;
+  main.b3 = data.b3;
+  main.b4 = data.b4;
+  main.b5 = data.b5;
+  main.b6 = data.b6;
+  main.b7 = data.b7;
+  main.b8 = data.b8;
+  main.threats2 = data.threats2;
 
- const yalalist = document.getElementById("yala");
-    data.yala.forEach(details => {
-      const listitem = document.createElement("li");
-      listitem.textContent = details;
-      yalalist.appendChild(listitem);
-    });
- 
- const wilpattulist = document.getElementById("wilpattu");
- data.wilpattu.forEach(details => {
-   const listitem = document.createElement("li");
-   listitem.textContent = details;
-   wilpattulist.appendChild(listitem);
-    });
-
- const hortonlist = document.getElementById("horton");
- data.horton.forEach(details => {
-   const listitem = document.createElement("li");
-   listitem.textContent = details;
-   hortonlist.appendChild(listitem);
-    });
- const threatslist = document.getElementById("threats");
- data.threats.forEach(details => {
-   const listitem = document.createElement("li");
-   listitem.textContent = details;
-   threatslist.appendChild(listitem);
-    });
-
- document.getElementById("head3").textContent = data.head3;
- document.getElementById("head4").textContent = data.head4;
- document.getElementById("head5").textContent = data.head5;
- document.getElementById("head6").textContent = data.head6;
- document.getElementById("head7").textContent = data.head7;
- document.getElementById("head8").textContent = data.head8;
- document.getElementById("head8").textContent = data.head8;
- document.getElementById("head9").textContent = data.head9;
- document.getElementById("head10").textContent = data.head10;
- document.getElementById("head11").textContent = data.head11;
- document.getElementById("head12").textContent = data.head12;
- document.getElementById("p3").textContent = data.p3;
- document.getElementById("p4").textContent = data.p4;
- document.getElementById("p5").textContent = data.p5;
- document.getElementById("p6").textContent = data.p6;
- document.getElementById("p7").textContent = data.p7;
- document.getElementById("p8").textContent = data.p8;
- document.getElementById("p9").textContent = data.p9;
- document.getElementById("p10").textContent = data.p10;
- document.getElementById("p11").textContent = data.p11;
- document.getElementById("p12").textContent = data.p12;
- document.getElementById("p13").textContent = data.p13;
- document.getElementById("p14").textContent = data.p14;
- document.getElementById("p15").textContent = data.p15;
- document.getElementById("p16").textContent = data.p16;
- document.getElementById("b1").textContent = data.b1;
- document.getElementById("b2").textContent = data.b2;
- document.getElementById("b3").textContent = data.b3;
- document.getElementById("b4").textContent = data.b4;
- document.getElementById("b5").textContent = data.b5;
- document.getElementById("b6").textContent = data.b6;
- document.getElementById("b7").textContent = data.b7;
- document.getElementById("b8").textContent = data.b8;
-
-
-
- const threats2list = document.getElementById("threats2");
- data.threats2.forEach(details => {
-   const listitem = document.createElement("li");
-   listitem.textContent = details;
-   threats2list.appendChild(listitem);
-    });
-
-
+  localStorage.setItem("leo-head1",data.head1);
+  localStorage.setItem("leo-head2",data.head2);
+  localStorage.setItem("leo-head3",data.head3);
+  localStorage.setItem("leo-head4",data.head4);
+  localStorage.setItem("leo-head5",data.head5);
+  localStorage.setItem("leo-head6",data.head6);
+  localStorage.setItem("leo-head7",data.head7);
+  localStorage.setItem("leo-head8",data.head8);
+  localStorage.setItem("leo-head9",data.head9);
+  localStorage.setItem("leo-head10",data.head10);
+  localStorage.setItem("leo-head11",data.head11);
+  localStorage.setItem("leo-head12",data.head12);
+  localStorage.setItem("leo-p1",data.p1);
+  localStorage.setItem("leo-p2",data.p2);
+  localStorage.setItem("leo-p3",data.p3);
+  localStorage.setItem("leo-p4",data.p4);
+  localStorage.setItem("leo-p5",data.p5);
+  localStorage.setItem("leo-p6",data.p6);
+  localStorage.setItem("leo-p7",data.p7);
+  localStorage.setItem("leo-p8",data.p8);
+  localStorage.setItem("leo-p9",data.p9);
+  localStorage.setItem("leo-p10",data.p10);
+  localStorage.setItem("leo-p11",data.p11);
+  localStorage.setItem("leo-p12",data.p12);
+  localStorage.setItem("leo-p13",data.p13);
+  localStorage.setItem("leo-p14",data.p14);
+  localStorage.setItem("leo-p15",data.p15);
+  localStorage.setItem("leo-p16",data.p16);
+  localStorage.setItem("leo-l1",data.l1);
+  localStorage.setItem("leo-l2",data.l2);
+  localStorage.setItem("leo-l3",data.l3);
+  localStorage.setItem("leo-yala",data.yala);
+  localStorage.setItem("leo-wilpattu",data.wilpattu);
+  localStorage.setItem("leo-horton",data.horton);
+  localStorage.setItem("leo-threats",data.threats);
+  localStorage.setItem("leo-threats2",data.threats2);
+  localStorage.setItem("leo-b1",data.b1);
+  localStorage.setItem("leo-b2",data.b2);
+  localStorage.setItem("leo-b3",data.b3);
+  localStorage.setItem("leo-b4",data.b4);
+  localStorage.setItem("leo-b5",data.b5);
+  localStorage.setItem("leo-b6",data.b6);
+  localStorage.setItem("leo-b7",data.b7);
+  localStorage.setItem("leo-b8",data.b8);
 })

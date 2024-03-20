@@ -4,7 +4,7 @@
   margin: 0px;
   padding: 0px;
   font-family: 'Young Serif', serif;
-  
+  cursor: url("pointer.png"),auto;
 }
 
 p{
@@ -17,6 +17,7 @@ body {
  background:#32745c;
  margin: 0;
  padding: 0;
+ 
 }
 
 body::-webkit-scrollbar {
@@ -50,6 +51,28 @@ img{
  border-radius: 10px;
 }
 
+.news-letter{
+  text-align: center;
+  background: url("Zoo-PNG-Transparent-Image.png");
+  background-size: cover;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+  padding: 1.2rem;
+  border-radius: 10px;
+  height: 20rem;
+}
+.news-letter input,button{
+  padding:10px;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+}
+.news-letter input[type="email"]:focus{
+  border: 3px solid #04ca7b;
+}
+.news-letter button{
+  background: linear-gradient(to top,#3bc18c,#48f5be);
+  cursor: pointer;
+}
 
 /*navbar */
 
@@ -59,6 +82,7 @@ img{
  transition: width 600ms ease;
  overflow: scroll;
  z-index: 1;
+ cursor: pointer;
 }
 .navbar-nav {
  list-style: none;
@@ -68,6 +92,7 @@ img{
  flex-direction: column;
  align-items: center;
  background:#c2fef1; 
+ cursor: pointer;
 }
 .nav-item {
  width: 100%;
@@ -104,6 +129,7 @@ svg:hover{
  display: none;
  margin-left: 1rem;
  color: black;
+ cursor: pointer;
 }
 
 .image{
@@ -151,8 +177,7 @@ svg:hover{
 
 .logo1 {
   border-radius: 100%;
-  box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
-  padding: 10px;
+  padding: 5px;
   height: 1.5rem;
   transition: 600ms;
 }
@@ -165,19 +190,42 @@ svg:hover{
 header{
   display: flex;
 }
-
+.head-logo{
+  width: 90px;
+  height: 70px;
+  transition: 500ms;
+  margin-left: 5px;
+  margin-top: 5px;
+ }
+ 
 .headlogos {
  margin-left: 5rem;
  background:#15523e;
  padding: 3px;
  box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+ display: flex;
+ justify-content: space-between;
+}
+.buttono {
+  padding: 1rem;
+}
+.buttono button{
+  margin-left: 4px;
+  background: transparent;
+  color: white;
+  padding: 1rem;
+  border:#3e9978 solid 4px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.buttono .sign-up{
+  background: linear-gradient(to right,#08835c,#04ca7b);
+}
+.buttono a{
+  text-decoration:none;
+  cursor: pointer;
 }
 
-.head-logo{
- width: 90px;
- height: 70px;
- transition: 500ms;
-}
 
 
 
@@ -364,7 +412,14 @@ footer{
   }
   .footer-logo{
     width: 150px;
-    height: 50px;
+    height: 40px;
+  }
+  .buttono {
+    padding: 0.3rem;
+  }
+  .buttono button{
+    padding:0.8rem;
+    margin-top: 2px;
   }
 }
 

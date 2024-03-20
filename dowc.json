@@ -14,11 +14,11 @@
  "p10" : "Protected areas of Sri Lanka play a vital role in biodiversity Conservation. Shrinking and disappearance of habitats due to the rapid growth of human population, development projects and urbanization, some species are being pushed into the threatened status. Human intervention is prohibited or limited inside the protected areas. Therefore these areas act as refuges for species by providing ideal habitat to ensure their survival. Protected areas protect ecosystem services and cultural and historical significance areas. In addition to that these areas are reference areas for monitoring of changes in outside due to the human impact. Protected areas are administrated by Department of Wildlife Conservation and Forest Department in Sri Lanka.",
  "head2" : "Classification of Protected Areas according to Fauna and Flora Protection Ordinance",
  "protect" :["Strict Natural Reserve - 03","National Park - 25","Nature Reserve -09","Jungle Corridor -02","Marine National Park -01","Marine Reserves -00","Buffer Zone -00","Sanctuary or a Managed Elephant Reserve – 68 +1"],
+ "subhead1" : "most visited :",
  "head3" : "Strict Natural Reserve",
- "footer1" : "News",
- "footer2" : "About Us",
- "footer3" : "Contact Us",
- "footer4" : "Our Team",
- "footer5" : "Copyright &copy;2023 Travel Lanka (pvt)Ltd."
+ "head4" : "National Parks",
+ "head5" : "Jungle Corridor",
+ "head6" : "Marine National Park",
+ "location" : "Location :"
 
 }

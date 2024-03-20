@@ -1,33 +1,72 @@
+const main = {
+  headword : "",
+  headtext : "",
+  p1 : "",
+  p2 : "",
+  p3 : "",
+  p4 : "",
+  p5 : "",
+  p6 : "",
+  p7 : "",
+  p8 : "",
+  p9 : "",
+  p10 : "",
+  head1 : "",
+  head2 : "",
+  head3 : "",
+  protect : [],
+  head4 : "",
+  head5 : "",
+  head6 : "",
+  subhead1 : "",
+  location : ""
+}
+
 fetch('dowc.json')
 .then(Response => Response.json())
 .then(data => {
+  main.headword = data.headword;
+  main.headtext = data.headtext;
+  main.p1 = data.p1;
+  main.p2 = data.p2;
+  main.p3 = data.p3;
+  main.p4 = data.p4;
+  main.p5 = data.p5;
+  main.p6 = data.p6;
+  main.p7 = data.p7;
+  main.p8 = data.p8;
+  main.p9 = data.p9;
+  main.p10 = data.p10;
+  main.head1 = data.head1;
+  main.head2 = data.head2;
+  main.head3 = data.head3;
+  main.head4 = data.head4;
+  main.subhead1 = data.subhead1;
+  main.protect = data.protect;
+  main.head5 = data.head5;
+  main.head6 = data.head6;
+  main.location = data.location;
 
- document.getElementById("head-word").textContent = data.headword;
- document.getElementById("headtext").textContent = data.headtext;
- document.getElementById("head1").textContent = data.head1;
- document.getElementById("head2").textContent = data.head2;
- document.getElementById("head3").textContent = data.head3;
- document.getElementById("p1").textContent = data.p1;
- document.getElementById("p2").textContent = data.p2;
- document.getElementById("p3").textContent = data.p3;
- document.getElementById("p4").textContent = data.p4;
- document.getElementById("p5").textContent = data.p5;
- document.getElementById("p6").textContent = data.p6;
- document.getElementById("p7").textContent = data.p7;
- document.getElementById("p8").textContent = data.p8;
- document.getElementById("p9").textContent = data.p9;
- document.getElementById("p10").textContent = data.p10;
- document.getElementById("footer1").textContent = data.footer1;
- document.getElementById("footer2").textContent = data.footer2;
- document.getElementById("footer3").textContent = data.footer3;
- document.getElementById("footer4").textContent = data.footer4;
- document.getElementById("footer5").textContent = data.footer5;
 
- const protectlist = document.getElementById("protect");
-    data.protect.forEach(parks => {
-      const listitem = document.createElement("li");
-      listitem.textContent = parks;
-      protectlist.appendChild(listitem);
-    });
-
+  /*localStorage.setItem("dowc-headword",data.headword);
+  localStorage.setItem("dowc-headtext",data.headtext);
+  localStorage.setItem("dowc-p1",data.p1);
+  localStorage.setItem("dowc-p2",data.p2);
+  localStorage.setItem("dowc-p3",data.p3);
+  localStorage.setItem("dowc-p4",data.p4);
+  localStorage.setItem("dowc-p5",data.p5);
+  localStorage.setItem("dowc-p6",data.p6);
+  localStorage.setItem("dowc-p7",data.p7);
+  localStorage.setItem("dowc-p8",data.p8);
+  localStorage.setItem("dowc-p9",data.p9);
+  localStorage.setItem("dowc-p10",data.p10);
+  localStorage.setItem("dowc-head1",data.head1);
+  localStorage.setItem("dowc-head2",data.head2);
+  localStorage.setItem("dowc-head3",data.head3);
+  localStorage.setItem("dowc-head4",data.head4);
+  localStorage.setItem("dowc-head5",data.head5);
+  localStorage.setItem("dowc-head6",data.head6);
+  localStorage.setItem("dowc-subhead",data.subhead1);
+  localStorage.setItem("dowc-location",data.location);
+  localStorage.setItem("dowc-protect",data.protect); */
 })

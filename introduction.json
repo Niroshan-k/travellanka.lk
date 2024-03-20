@@ -19,11 +19,16 @@
  "p9" : "Lunugamvehera National Park (Sinhala: ලුණුගම්වෙහෙර ජාතික වනෝද්‍යානය) in Sri Lanka was declared in 1995, with the intention of protecting the catchment area of the Lunugamvehera reservoir and wildlife of the area. The national park is an important habitat for water birds and elephants. The catchment area is vital to maintain the water levels of the five tanks in the down stream of Kirindi Oya and wetland characteristics of Bundala National Park.This national park also serves as a corridor for elephants to migrate between Yala National Park and Udawalawe National Park.The national park is situated 261 km (162 mi) southwest from Colombo. After being closed because of the Sri Lankan civil war, the national park is now open to the general public.",
  "p10" : "Maduru Oya National Park (Sinhala: මාදුරු ඔය ජාතික වනෝද්‍යානය, romanized: Māduru Oya Jātika Vanōdyānaya; Tamil: மாதுரு ஓயா தேசிய பூங்கா, romanized: Māturu Ōyā Tēciya Pūṅkā) is a national park of Sri Lanka, established under the Mahaweli development project and also acts as a catchment of the Maduru Oya Reservoir. The park was designated on 9 November 1983.Providing a sanctuary to wildlife, especially for elephants and protecting the immediate catchments of five reservoirs are the importance of the park. A community of Vedda people, the indigenous ethnic group of Sri Lanka lives within the park boundary in Henanigala.The park is situated 288 kilometres (179 mi) north-east of Colombo.",
  "tablehead" : ["Name","Map","Location","Established","Area"],
- "footer1" : "News",
- "footer2" : "About Us",
- "footer3" : "Contact Us",
- "footer4" : "Our Team",
- "footer5" : "Copyright &copy;2023 Travel Lanka (pvt)Ltd."
-
-
+ "heading1" : "National Parks",
+ "subhead" : "Summary",
+ "hthree1" : "Bundala National Park",
+ "hthree2" : "Chundikulam National Park",
+ "hthree3" : "Adam's Bridge Marine National Park",
+ "hthree4" : "Angammedilla National Park",
+ "hthree5" : "Delft National Park",
+ "hthree6" : "Horton Plains National Park",
+ "hthree7" : "Kaudulla National Park",
+ "hthree8" : "Kumana National Park",
+ "hthree9" : "Lunugamvehera National Park",
+ "hthree10" : "Maduru Oya National Park"
 }

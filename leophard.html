@@ -18,74 +18,94 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
 <body>
   <!-- header -->
   <header class="headlogos">
-    <img src="20231226_172656.png" class="head-logo">
+    <!-- logos -->
+    <section>
+      <img src="20231226_172656.png" class="head-logo" alt="logo"> 
+    </section>
+    <section class="buttono">
+      <button class="sign-in"><a href="register.html">Sign In</a></button>
+      <button class="sign-up"><a href="register.html">Sign Up</a></button>
+    </section> 
   </header>
-
-  <main>
+  <main x-data="main">
 
     <!-- content from wildlife conservation website-->
 
-    <h1 id="head1"></h1>
+    <h1 id="head1" x-text="head1"></h1>
     <br>
-    <p id="p1"></p>
+    <p id="p1" x-text="p1"></p>
     <br>
-    <p id="p2"></p>
+    <p id="p2" x-text="p2"></p>
     <br>
-    <h4 id="head2"></h4>
+    <h4 id="head2" x-text="head2"></h4>
     <br>
     <ol>
-      <li id="l1"></li>
+      <li id="l1" x-text="l1"></li>
       <ul id="yala">
+        <template x-for="item in yala">
+          <li x-text="item"></li>
+        </template>
       </ul>
       <br>
-      <li id="l2"></li>
+      <li id="l2" x-text="l2"></li>
       <ul id="wilpattu">
+        <template x-for="item in wilpattu">
+          <li x-text="item"></li>
+        </template>
       </ul>
       <br>
-      <li id="l3"></li>
+      <li id="l3" x-text="l3"></li>
       <ul id="horton">
+        <template x-for="item in horton">
+          <li x-text="item"></li>
+        </template>
       </ul>
     </ol>
     <br>
-    <h4 id="head3"></h4>
+    <h4 id="head3" x-text="head3"></h4>
     <br>
     <hr>
     <br>
-    <h1 id="head4"></h1>
+    <h1 id="head4" x-text="head4"></h1>
     <br>
     <section class="threat">
       <img src="leopard2.jpeg" alt="leopard">
       <br>
-      <h2 id="head5"></h2>
+      <h2 id="head5" x-text="head5"></h2>
       <br>
       <ul id="threats">
+        <template x-for="item in threats">
+          <li x-text="item"></li>
+        </template>
       </ul>
       <br>
-      <h3 id="head6"></h3>
-      <p id="p3"></p>
+      <h3 id="head6" x-text="head6"></h3>
+      <p id="p3" x-text="p3"></p>
       <br>
-      <h3 id="head7"></h3>
-      <p id="p4"></p>
+      <h3 id="head7" x-text="head7"></h3>
+      <p id="p4" x-text="p4"></p>
       <br>
-      <h3 id="head8"></h3>
-      <p id="p5"></p>
+      <h3 id="head8" x-text="head8"></h3>
+      <p id="p5" x-text="p5"></p>
       <br>
-      <b id="b1"></b>
-      <p id="p6"></p>
+      <b id="b1" x-text="b1"></b>
+      <p id="p6" x-text="p6"></p>
       <br>
-      <b id="b2"></b>
-      <p id="p7"></p>
+      <b id="b2" x-text="b2"></b>
+      <p id="p7" x-text="p7"></p>
       <br>
-      <b id="b3"></b> 
-      <p id="p8"></p>
+      <b id="b3" x-text="b3"></b> 
+      <p id="p8" x-text="p8"></p>
       <br>
-      <b id="b4"></b>
-      <p id="p9"></p>
+      <b id="b4" x-text="b4"></b>
+      <p id="p9" x-text="p9"></p>
       <br>
       <a class="a" href="https://www.cbd.int/doc/world/lk/lk-nbsap-01-en.pdf">biodiversity conservation in sri lanka</a>
       <hr>
@@ -94,27 +114,30 @@
     <section>
       <img src="leopard3.jpeg">
       <br>
-      <h2 id="head9"></h2>
+      <h2 id="head9" x-text="head9"></h2>
       <br>
       <ul id="threats2">
+        <template x-for="item in threats2">
+          <li x-text="item"></li>
+        </template>
       </ul>
       <br>
-      <h3 id="head10"></h3>
-      <p id="p10"></p>
+      <h3 id="head10" x-text="head10"></h3>
+      <p id="p10" x-text="p10"></p>
       <br>
-      <h3 id="head11"></h3>
-      <p id="p11"></p>
-      <h3 id="head12"></h3>
-      <p id="p12"></p>
+      <h3 id="head11" x-text="head11"></h3>
+      <p id="p11" x-text="p11"></p>
+      <h3 id="head12" x-text="head12"></h3>
+      <p id="p12" x-text="p12"></p>
       <br>
-      <b id="b5"></b> 
-      <p id="p13"></p><br>
-      <b id="b6"></b> 
-      <p id="p14"></p><br>
-      <b id="b7"></b>
-      <p id="p15"></p><br>
-      <b id="b8"></b> 
-      <p id="p16"></p>
+      <b id="b5" x-text="b5"></b> 
+      <p id="p13" x-text="p13"></p><br>
+      <b id="b6" x-text="b6"></b> 
+      <p id="p14" x-text="p14"></p><br>
+      <b id="b7" x-text="b7"></b>
+      <p id="p15" x-text="p15"></p><br>
+      <b id="b8" x-text="b8"></b> 
+      <p id="p16" x-text="p16"></p>
       <br>
       <a class="a" href="https://www.dwc.gov.lk/">Department of Wildlife Conservation</a>
     </section>
@@ -126,7 +149,7 @@
      <li class="logo">
        <a class="nav-link" href="index.html">
          <span class="link-text logo-text"><img class="image" src="travel.lanka.png"></span>
-         <svg class="logo1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4L224 214.3V256v41.7L52.5 440.6zM256 352V256 128 96c0-12.4 7.2-23.7 18.4-29s24.5-3.6 34.1 4.4l192 160c7.3 6.1 11.5 15.1 11.5 24.6s-4.2 18.5-11.5 24.6l-192 160c-9.5 7.9-22.8 9.7-34.1 4.4s-18.4-16.6-18.4-29V352z"/></svg>
+         <svg class="logo1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg>
        </a>
      </li>
 
