@@ -2,6 +2,47 @@
  color: black;
 }
 
+.massage{
+ display: flex;
+ margin: auto;
+ margin-top:-120%;
+ flex-direction: column;
+ text-align: center;
+ width: 20rem;
+ background:white;
+ padding: 2rem;
+ border-radius: 20px;
+ transform: translate(0,-60%) scale(0.06);
+ transition:400ms;
+ visibility:hidden;
+}
+.massage img{
+ width: 70px;
+ margin: auto;
+}
+.massage button{
+ background: #0abb83;
+ width: 100%;
+ cursor: pointer;
+}
+.open-loginpopup{
+ margin-top:30%;
+ transform: scale(1);
+ visibility: visible;
+}
+.open-failpopup{
+ margin-top: 100%;
+ visibility: visible;
+ transform: scale(1);
+}
+.open-registerpopup{
+ margin-top: 200%;
+ visibility: visible;
+ transform: scale(1);
+}
+.form-hidden{
+ display: none;
+}
 .form-box {
  background: linear-gradient(to top,#81f4c6,#ccffef);
  border-radius: 20px;
@@ -9,6 +50,7 @@
  height: 50rem;
  position: relative;
  margin: 11% auto;
+ margin-bottom: 10rem;
  padding: 5px;
  overflow: hidden;
  cursor: url("pointer.png"),auto;
@@ -147,6 +189,8 @@ input[type="checkbox"]{
 
 #----------------------
 
+
+
 .icns {
  margin: 1rem;
  text-align: center;
@@ -221,6 +265,12 @@ input[type="checkbox"]{
  .txt {
   font-size: 12px;
   margin-left: 0;
+ }
+ .massage{
+  width: 200px;
+ }
+ .open-registerpopup{
+  margin-top: 120%;
  }
 }
 

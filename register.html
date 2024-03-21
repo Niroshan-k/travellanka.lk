@@ -10,8 +10,7 @@
 
  <!--bootasrap-->
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
 
  <title>Travel Lanka (Pvt)Ltd.</title>
 </head>
@@ -82,15 +81,17 @@
 </nav>
 
 <main>
-  <section class="form-box">
+  <section class="form-box" id="form">
    <section class="button-box">
     <section id="btn"></section>
     <button type="button" class="toggle-btn" onclick="login()">Log In</button>
     <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
    </section>
    <form action="" class="input-group" id="loginform">
-    <input type="email" class="input-field" placeholder="email" required id="useremail">
-    <input type="password" class="input-field" placeholder="Password" required id="password">
+    <input type="email" class="input-field" placeholder="email"  id="useremail">
+    <p id="need_email" style="color: red;font-size: 10px;"></p>
+    <input type="password" class="input-field" placeholder="Password"  id="password">
+    <p id="need_pwd" style="color: red;font-size: 10px;"></p>
    <section class="txt">
     <div>
      <p>Forget Password</p>
@@ -114,7 +115,7 @@
     </div>
    </section> 
     <section class="btn">
-      <button class="submit-btn" id="login" onclick="checkLogin()">LOG IN</button>
+      <button class="submit-btn" type="button" id="login" onclick="checkLogin()">LOG IN</button>
       <p>Or,login with</p>
       <br>
       <section class="icns">
@@ -133,11 +134,15 @@
 
    <form action="" class="input-group" id="register">
 
-    <input type="text" class="input-field" placeholder="Full name" id="fullname" required>
-    <input type="text" class="input-field" placeholder="Username" id="newusername" required>
-    <input type="text" class="input-field" placeholder="Email" id="email" required>
-    <input type="password" class="input-field" placeholder="Password" id="newpassword" required>
-    <!--<input type="password" class="input-field" placeholder="Re-enter password" id="retypepwd" required>-->
+    <input type="text" class="input-field" placeholder="Full name" id="fullname" >
+    <p id="nameError"></p>
+    <input type="text" class="input-field" placeholder="Username" id="newusername">
+    <p id="usernameError"></p>
+    <input type="text" class="input-field" placeholder="Email" id="email" >
+    <p id="emailError"></p>
+    <input type="password" class="input-field" placeholder="Password" id="newpassword" >
+    <p id="passwordError"></p>
+    <!--<input type="password" class="input-field" placeholder="Re-enter password" id="retypepwd" >-->
 
    <section class="txt1">
      <p>By clicking "SIGN UP",I agree to Travel Lanka's <a>Terms of Use</a> and <a> Privacy Policy.</a> </p>
@@ -145,7 +150,7 @@
 
    <p id="error"></p>
     <section class="btn2">
-      <button class="submit-btn" id="submit-btn" onclick="saveData()">SIGN UP</button>
+      <button class="submit-btn" type="button" id="submit-btn" onclick="saveData()">SIGN UP</button>
     <p>Or,sign up with</p>
     <section class="icns">
      <i class="fa-brands fa-facebook"></i>
@@ -159,6 +164,28 @@
     </section>
     
    </form>
+  </section>
+
+  <section class="massage" id="loginsuccess">
+    <img src="pngegg.png" alt="green-tick">
+    <br>
+    <h3>Login Successfull!</h3>
+    <p style="text-align: center;font-size: 13px;">Well Come to Sri Lankan Wild Life</p>
+    <a href="homelogout.html"><button>OK</button></a>
+  </section>
+  <section class="massage" id="loginfail">
+    <img src="1024px-Cross_red_circle.svg.png" alt="red-cross">
+    <br>
+    <h3>Login Failed!</h3>
+    <p style="text-align: center;font-size: 13px;">Something went wrong.</p>
+    <a href="register.html"><button style="background: red;">OK</button></a>
+  </section>
+  <section class="massage" id="registersuccess">
+    <img src="pngegg.png" alt="green-tick">
+    <br>
+    <h3>Regitation Successfull!</h3>
+    <p style="text-align: center;font-size: 13px;">Well Come to Sri Lankan Wild Life</p>
+    <a href="register.html"><button>OK</button></a>
   </section>
 </main>
 <script src="register.js"></script>

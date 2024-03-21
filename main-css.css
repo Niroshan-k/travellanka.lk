@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Young Serif', serif;
+  font-family: "Alice", serif;
   cursor: url("pointer.png"),auto;
 }
 
@@ -53,12 +53,11 @@ img{
 
 .news-letter{
   text-align: center;
-  background: url("Zoo-PNG-Transparent-Image.png");
   background-size: cover;
   box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
   padding: 1.2rem;
   border-radius: 10px;
-  height: 20rem;
+  height:100%;
 }
 .news-letter input,button{
   padding:10px;
@@ -73,7 +72,14 @@ img{
   background: linear-gradient(to top,#3bc18c,#48f5be);
   cursor: pointer;
 }
-
+.news-letter a{
+  text-decoration: none;
+  color: #04ca7b;
+  cursor: pointer;
+}
+.news-letter a:hover{
+  text-decoration: underline;
+}
 /*navbar */
 
 .navbar {
@@ -377,8 +383,8 @@ footer{
   .head-logo{
     padding: 3px;
     margin-top: 0;
-    width: 80px;
-    height: 60px;
+    width: 60px;
+    height: 48px;
   }
   .name-logo{
     width: 0px;
