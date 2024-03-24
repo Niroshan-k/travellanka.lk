@@ -1,5 +1,4 @@
-const main = {
-};
+const main = {};
 
 fetch('leophard.json')
 .then(Response => Response.json())
@@ -50,7 +49,7 @@ fetch('leophard.json')
   main.b8 = data.b8;
   main.threats2 = data.threats2;
 
-  localStorage.setItem("leo-head1",data.head1);
+  /*localStorage.setItem("leo-head1",data.head1);
   localStorage.setItem("leo-head2",data.head2);
   localStorage.setItem("leo-head3",data.head3);
   localStorage.setItem("leo-head4",data.head4);
@@ -93,5 +92,5 @@ fetch('leophard.json')
   localStorage.setItem("leo-b5",data.b5);
   localStorage.setItem("leo-b6",data.b6);
   localStorage.setItem("leo-b7",data.b7);
-  localStorage.setItem("leo-b8",data.b8);
+  localStorage.setItem("leo-b8",data.b8);*/
 })

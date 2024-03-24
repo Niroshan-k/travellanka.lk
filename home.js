@@ -185,4 +185,39 @@ fetch('home.json')
     localStorage.setItem("home-animal7",data.animals7);
     localStorage.setItem("home-animallist",data.animallist);
     //localStorage.setItem("",data.); */
+
+    let button = document.getElementById("edit-button");
+    let userClick = document.getElementById("show-input-field");
+    let input = document.getElementById("edit-input");
+    let edit = document.getElementById("subsecI");
+    let hide = document.getElementById("hide");
+    let cut = document.getElementById("erase");
+    let content = data.subsecI;
+
+    button.addEventListener("click",editvalue);
+    userClick.addEventListener("click",showInput);
+    cut.addEventListener("click",cutInfo);
+
+    function showInput() {
+      hide.classList.add("edit-visible");
+    }
+
+    function editvalue() {
+      main.subsecI = content + " " + input.value;
+      edit.innerText = main.subsecI;
+      //hide.style.visibility = "hidden";
+      //hide.classList.add("edit");
+      input.value = "";
+      let new_input = localStorage.getItem("email");
+      localStorage.setItem(new_input,input.value);
+    }
+    function cutInfo(){
+      //hide.style.visibility = "hidden";
+      let user = localStorage.getItem("email");
+      localStorage.removeItem(user);
+      edit.innerText = content;
+      input.value = "";
+    }
   })
+  
+  

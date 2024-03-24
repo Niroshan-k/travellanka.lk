@@ -1,7 +1,14 @@
 *{
  color: black;
 }
-
+.password{
+ display: flex;
+ flex-direction: row;
+}
+.password img{
+ margin-top: 1.7rem;
+ width: 1.5rem;
+}
 .massage{
  display: flex;
  margin: auto;

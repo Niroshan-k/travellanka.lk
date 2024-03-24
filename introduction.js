@@ -1,7 +1,4 @@
-const main = {
-  introhead : "",
-  tablehead : ""
-};
+const main = {};
 
 fetch('introduction.json')
   .then(Response => Response.json())
