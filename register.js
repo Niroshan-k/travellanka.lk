@@ -192,6 +192,18 @@ function clearError(id) {
     error.innerText = "";
 }
 
+let eye = document.getElementById("eyeicon");
+let password = document.getElementById("newpassword");
+eye.onclick = function(){
+        if(password.type == "password"){
+            password.type = "text";
+            eye.src = "eye-open.png";
+        }else {
+            password.type = "password";
+            eye.src = "eye-close.png";
+        }
+}
+
 
 /*function checkLogin() {
  let email,password,loginpopup,form,loginfail;
