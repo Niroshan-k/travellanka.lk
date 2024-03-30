@@ -34,6 +34,7 @@
       <img src="20231226_172656.png" class="head-logo" alt="logo"> 
     </section>
     <section class="buttono">
+     <button class="sign-up">Edit</button>
       <a href="register.html"><button class="sign-up">Log Out</button></a>
     </section> 
   </header>
@@ -57,7 +58,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a href="introductionlogout.html" class="nav-link">
+        <a href="introduction.html" class="nav-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c016H316H1416zm16 48H316H1416z"/></svg>
           <span class="link-text" id="nav2">Introduction</span>
         </a>
@@ -207,37 +208,17 @@
       <section class="container">
         
         <!-- content from srilankan website & wilpattu website -->
-        <section class="text" x-data="section">
-          <br>
-          <br>
+        <section class="text">
           <h3 id="sub-head1" x-text="subhead1"></h3>
           <p class="sub-sec" id="sub-sec1" x-text="subsec1"></p>
-          <button type="button" class="btn" id="section-edit"><i class="fa-solid fa-pen-to-square"></i></button>
-          <button type="button" class="btn" id="section-clear">CLEAR</button>
-          <br><br>
-          <div class="input-text" id="edit">
-              <textarea id="edit-area"></textarea>
-          </div>    
           <br>
           <h3 id="sub-head2" x-text="subhead2"></h3>
           <p class="sub-sec" id="sub-sec2" x-text="subsec2"></p>
-          <button type="button" class="btn" id="section-editI"><i class="fa-solid fa-pen-to-square"></i></button>
-          <button type="button" class="btn" id="section-clearI">CLEAR</button>
-          <br><br>
-          <div class="input-text" id="editI">
-              <textarea id="edit-areaI"></textarea>
-          </div>    
           <br>
           <h3 id="sub-head3" x-text="subhead3"></h3>
           <p class="sub-sec" id="sub-sec3" x-text="subsec3"></p>
-          <button type="button" class="btn" id="section-editII"><i class="fa-solid fa-pen-to-square"></i></button>
-          <button type="button" class="btn" id="section-clearII">CLEAR</button>
-          <br><br>
-          <div class="input-text" id="editII">
-              <textarea id="edit-areaII"></textarea>
-          </div>    
-          
        </section>
+
       </section>
       <br>
 
@@ -253,18 +234,6 @@
               <h3 id="subheadI" x-text="subheadI"></h3> 
               <br>
               <p class="sub-sec" id="subsecI" x-text="subsecI"></p>
-            
-            
-            <div class="edit" id="hide1">
-              <textarea id="edit-input1" placeholder="Add your content here..."></textarea>
-            </div>   
-            <div class="inputButton">
-              <button id="show-input-field1"><i class="fa-solid fa-pen-to-square"></i></button>
-              <button id="erase1">CLEAR</button>
-              <button id="edit-button1">SUBMIT</button>
-            </div>  
-
-
           </section>  
             <br>
             
@@ -273,15 +242,6 @@
               <h3 id="subheadII" x-text="subheadII"></h3>
               <br>
               <p class="sub-sec" id="subsecII" x-text="subsecII"></p>
-
-              <div class="edit" id="hide2">
-                <textarea id="edit-input2" placeholder="Add your content here..."></textarea>
-              </div>   
-              <div class="inputButton">
-                <button id="show-input-field2"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button id="erase2">CLEAR</button>
-                <button id="edit-button2">SUBMIT</button>
-              </div> 
             </section> 
             <br>
 
@@ -290,14 +250,6 @@
               <h3 id="subheadIII" x-text="subheadIII"></h3>
               <br>
               <p class="sub-sec" id="subsecIII" x-text="subsecIII"></p>
-              <div class="edit" id="hide3">
-                <textarea id="edit-input3" placeholder="Add your content here..."></textarea>
-              </div>   
-              <div class="inputButton">
-                <button id="show-input-field3"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button id="erase3">CLEAR</button>
-                <button id="edit-button3">SUBMIT</button>
-              </div> 
             </section> 
             <br>
 
@@ -306,14 +258,6 @@
               <h3 id="subheadIV" x-text="subheadIV"></h3>
               <br>
               <p class="sub-sec" id="subsecIV" x-text="subsecIV"></p>
-              <div class="edit" id="hide4">
-                <textarea id="edit-input4" placeholder="Add your content here..."></textarea>
-              </div>   
-              <div class="inputButton">
-                <button id="show-input-field4"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button id="erase4">CLEAR</button>
-                <button id="edit-button4">SUBMIT</button>
-              </div> 
             </section> 
           <br>
           
@@ -359,7 +303,6 @@
           <li x-text="listitem"></li>
         </template>
       </ol>
-      
       <br>
      <section class="news-letter">
       <h1>NEWS LETTER</h1>

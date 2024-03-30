@@ -1,4 +1,37 @@
-const main = {};
+const main = {
+  introhead : "",
+  introhead1 : "",
+  introhead2 : "",
+  introhead3 : "",
+  introp : "",
+  introp1 : "",
+  introp2 : "",
+  introp3 : "",
+  introp4 : "",
+  heading1 : "",
+  p1 : "",
+  p2 : "",
+  p3 : "",
+  p4 : "",
+  p5 : "",
+  p6 : "",
+  p7 : "",
+  p8 : "",
+  p9 : "",
+  p10 : "",
+  subhead : "",
+  tablehead : [],
+  hthree1 : "",
+  hthree2 : "",
+  hthree3 : "",
+  hthree4 : "",
+  hthree5 : "",
+  hthree6 : "",
+  hthree7 : "",
+  hthree8 : "",
+  hthree9 : "",
+  hthree10 : "",
+};
 
 fetch('introduction.json')
   .then(Response => Response.json())

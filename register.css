@@ -1,6 +1,23 @@
 *{
  color: black;
 }
+.database{
+ margin:auto;
+ padding: 2rem;
+ width:500px;
+ cursor: pointer;
+ visibility: hidden;
+}
+.database button{
+ width: 100%;
+ margin: 1rem;
+ background: linear-gradient(to left,#04c879,#04f8aa);
+}
+.database a{
+ text-decoration: none;
+ cursor: pointer;
+ color: #000000;
+}
 .password{
  display: flex;
  flex-direction: row;
@@ -278,6 +295,13 @@ input[type="checkbox"]{
  }
  .open-registerpopup{
   margin-top: 120%;
+ }
+ .database {
+  width: 100px;
+ }
+ .database button{
+  width: 100%;
+  margin: 0.5rem;
  }
 }
 

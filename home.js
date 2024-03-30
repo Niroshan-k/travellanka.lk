@@ -25,12 +25,6 @@ const main = {
   gallerylink : "",
   heading1 : "",
   heading2 : "",
-  subhead1 : "",
-  subsec1 : "",
-  subhead2 : "",
-  subsec2 : "",
-  subhead3 : "",
-  subsec3 : "",
   animal1 : "",
   animal2 : "",
   subheadI : "",
@@ -62,6 +56,14 @@ const main = {
   animals7 : "",
   animallist : []
 }
+const section = {
+  subhead1 : "",
+  subsec1 : "",
+  subhead2 : "",
+  subsec2 : "",
+  subhead3 : "",
+  subsec3 : ""
+}
 
 fetch('home.json')
   .then(Response => Response.json())
@@ -90,12 +92,12 @@ fetch('home.json')
     main.gallerylink = data.gallerylink;
     main.heading1 = data.heading1;
     main.heading2 = data.heading2;
-    main.subhead1 = data.subhead1;
-    main.subhead2 = data.subhead2;
-    main.subhead3 = data.subhead3;
-    main.subsec1 = data.subsec1;
-    main.subsec2 = data.subsec2;
-    main.subsec3 = data.subsec3;
+    section.subhead1 = data.subhead1;
+    section.subhead2 = data.subhead2;
+    section.subhead3 = data.subhead3;
+    section.subsec1 = data.subsec1;
+    section.subsec2 = data.subsec2;
+    section.subsec3 = data.subsec3;
     main.animal1 = data.animal1;
     main.animal2 = data.animal2;
     main.subheadI = data.subheadI;
@@ -185,7 +187,7 @@ fetch('home.json')
     localStorage.setItem("home-animal7",data.animals7);
     localStorage.setItem("home-animallist",data.animallist);
     //localStorage.setItem("",data.); */
-
+/*
     let button = document.getElementById("edit-button");
     let userClick = document.getElementById("show-input-field");
     let input = document.getElementById("edit-input");
@@ -200,16 +202,26 @@ fetch('home.json')
 
     function showInput() {
       hide.classList.add("edit-visible");
+      edit.innerText = "";
+      input.value = content;
     }
 
     function editvalue() {
-      main.subsecI = content + " " + input.value;
-      edit.innerText = main.subsecI;
-      //hide.style.visibility = "hidden";
-      //hide.classList.add("edit");
-      input.value = "";
-      let new_input = localStorage.getItem("email");
-      localStorage.setItem(new_input,input.value);
+
+      if (main.subsecI != input.value){
+        let new_input = localStorage.getItem("email");
+        localStorage.setItem(new_input,input.value);
+        main.subsecI = input.value;
+        edit.innerText = main.subsecI;
+
+      }//else if(input.value == null){
+        //localStorage.removeItem(user);
+        //edit.innerText = main.subsecI
+      //}
+      else {
+        main.subsecI = input.value;
+        edit.innerText = main.subsecI;
+      }
     }
     function cutInfo(){
       //hide.style.visibility = "hidden";
@@ -218,6 +230,138 @@ fetch('home.json')
       edit.innerText = content;
       input.value = "";
     }
+*/ 
+    const btn = document.getElementById("section-edit");
+    const area = document.getElementById("edit-area");
+    const edit = document.getElementById("edit");
+    const btnclear = document.getElementById("section-clear");
+    btn.addEventListener("click",show);
+    btnclear.addEventListener("click",clear);
+
+    const btnI = document.getElementById("section-editI");
+    const areaI = document.getElementById("edit-areaI");
+    const editI = document.getElementById("editI");
+    const btnclearI = document.getElementById("section-clearI");
+    btnI.addEventListener("click",show1);
+    btnclearI.addEventListener("click",clear1);
+
+    const btnII = document.getElementById("section-editII");
+    const areaII = document.getElementById("edit-areaII");
+    const editII = document.getElementById("editII");
+    const btnclearII = document.getElementById("section-clearII");
+    btnII.addEventListener("click",show2);
+    btnclearII.addEventListener("click",clear2);
+
+    function show() {
+      area.value = data.subsec1;
+      edit.classList.add("show");
+    }
+    function clear() {
+      edit.classList.remove("show");
+    }
+    function show1() {
+      areaI.value = data.subsec2;
+      editI.classList.add("show");
+    }
+    function clear1() {
+      editI.classList.remove("show");
+    }
+    function show2() {
+      areaII.value = data.subsec3;
+      editII.classList.add("show");
+    }
+    function clear2() {
+      editII.classList.remove("show");
+    }
+    
+    // Retrieve DOM elements for the first section
+    const button1 = document.getElementById("edit-button1");
+    const userClick1 = document.getElementById("show-input-field1");
+    const input1 = document.getElementById("edit-input1");
+    const edit1 = document.getElementById("subsecI");
+    const hide1 = document.getElementById("hide1");
+    const cut1 = document.getElementById("erase1");
+
+    // Retrieve DOM elements for the second section
+    const button2 = document.getElementById("edit-button2");
+    const userClick2 = document.getElementById("show-input-field2");
+    const input2 = document.getElementById("edit-input2");
+    const edit2 = document.getElementById("subsecII");
+    const hide2 = document.getElementById("hide2");
+    const cut2 = document.getElementById("erase2");
+
+    // Retrieve DOM elements for the second section
+    const button3 = document.getElementById("edit-button3");
+    const userClick3 = document.getElementById("show-input-field3");
+    const input3 = document.getElementById("edit-input3");
+    const edit3 = document.getElementById("subsecIII");
+    const hide3 = document.getElementById("hide3");
+    const cut3 = document.getElementById("erase3");
+
+    // Retrieve DOM elements for the second section
+    const button4 = document.getElementById("edit-button4");
+    const userClick4 = document.getElementById("show-input-field4");
+    const input4 = document.getElementById("edit-input4");
+    const edit4 = document.getElementById("subsecIV");
+    const hide4 = document.getElementById("hide4");
+    const cut4 = document.getElementById("erase4");
+
+    // Retrieve initial content for both sections from data
+    let content1 = data.subsecI;
+    let content2 = data.subsecII;
+    let content3 = data.subsecIII;
+    let content4 = data.subsecIV;
+
+    // Add event listeners for the first section
+    button1.addEventListener("click", () => editValue(input1, edit1,content1));
+    userClick1.addEventListener("click", () => showInput(input1, edit1, content1, hide1));
+    cut1.addEventListener("click", () => cutInfo(edit1, input1, content1, hide1));
+
+    // Add event listeners for the second section
+    button2.addEventListener("click", () => editValue(input2, edit2));
+    userClick2.addEventListener("click", () => showInput(input2, edit2, content2, hide2));
+    cut2.addEventListener("click", () => cutInfo(edit2, input2, content2, hide2));
+
+    // Add event listeners for the second section
+    button3.addEventListener("click", () => editValue(input3, edit3));
+    userClick3.addEventListener("click", () => showInput(input3, edit3, content3, hide3));
+    cut3.addEventListener("click", () => cutInfo(edit3, input3, content3, hide3));
+
+    // Add event listeners for the second section
+    button4.addEventListener("click", () => editValue(input4, edit4));
+    userClick4.addEventListener("click", () => showInput(input4, edit4, content4, hide4));
+    cut4.addEventListener("click", () => cutInfo(edit4, input4, content4, hide4));
+
+
+    // Function to show input field and populate it with content for both sections
+    function showInput(input, edit, content, hide) {
+      hide.classList.add("edit-visible");
+      edit.innerText = "";
+      input.value = content;
+    }
+
+    // Function to save edited content for both sections
+    function editValue(input, edit,content) {
+      const newValue = input.value.trim();
+      if (content !== newValue) {
+        const user = localStorage.getItem("email");
+        localStorage.setItem(user, newValue);
+        edit.innerText = newValue;
+  
+        
+      }
+    }
+
+    // Function to clear stored information for both sections
+    function cutInfo(edit, input, content, hide) {
+      const user = localStorage.getItem("email");
+      localStorage.removeItem(user);
+      edit.innerText = content;
+      input.value = "";
+      hide.classList.remove("edit-visible");
+    }
+
+
   })
   
   

@@ -1,21 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
+.btn{
+  width: 100px;
+  background:linear-gradient(to left,#04c879,#04f8aa);
+}
+.input-text{
+  transition: 300ms;
+  transform: scale(0.1);
+  display: none;
+}
+.input-text textarea{
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  font-size: 15px;
+  border-radius: 10px;
+  background: #6cf3c6;
+}
+.show{
+  display: block;
+  transform: scale(1);
+}
 .edit{
   display: flex;
   flex-direction: column;
   padding: 1rem;
   transform: scale(0.1);
   transition: 500ms;
-  visibility:hidden;
+  display: none;
 }
-.edit input{
-  margin: 1rem;
-  height: 2rem;
+.edit textarea{
+  width: 100%;
+  height: 15rem;
   border-radius: 5px;
   border: 0;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  background: #6cf3c6;
 }
 .edit-visible{
-  visibility: visible;
+  display: block;
   transform: scale(1);
 }
 .inputButton{
@@ -25,7 +49,7 @@
 }
 .inputButton button{
   width: 100%;
-  background: #4cf4bc;
+  background:linear-gradient(to left,#04c879,#04f8aa);
   cursor: pointer;
 }
 .inputButton i{
@@ -199,6 +223,7 @@ ul,ol{
  /*ul list*/
  .ul li a{
   text-decoration: none;
+  cursor: pointer;
  }
  .ul li a:hover{
   text-decoration:underline;

@@ -27,10 +27,6 @@
   fetch('index.json')
   .then(Response => Response.json())
   .then(data => {
-    document.getElementById("page1").textContent = data.page1;
-    document.getElementById("page2").textContent = data.page2;
-    document.getElementById("page3").textContent = data.page3;
-    document.getElementById("page4").textContent = data.page4;
     document.getElementById("p1").textContent = data.p1;
     document.getElementById("p2").textContent = data.p2;
     document.getElementById("p3").textContent = data.p3;
@@ -60,7 +56,7 @@
     </div>
     <br>
     <div>
-      <h1>WELLCOME TO SRI LANKA</h1>
+      <h1 style="text-align: center;font-family: 'Young Serif', serif;">WELLCOME TO SRI LANKA</h1>
     </div> 
     <br> 
   </section> 
@@ -75,10 +71,10 @@
         <i class="fa-solid fa-x" id="close-icon"></i>
       </label>
       <section class="navbar">
-        <a href="index.html" style="--i:0;" id="page1"></a>
-        <a href="aboutus.html" style="--i:1;" id="page2"></a>
-        <a href="services.html" style="--i:2;" id="page3"></a>
-        <a href="contact.html" style="--i:3;" id="page4"></a>
+        <a href="index.html" style="--i:0;" id="page1">Home</a>
+        <a href="aboutus.html" style="--i:1;" id="page2">About Us</a>
+        <a href="services.html" style="--i:2;" id="page3">Services</a>
+        <a href="contact.html" style="--i:3;" id="page4">Contact Us</a>
       </section>
     </nav>
     
@@ -112,21 +108,21 @@
       <h1 id="tourism*"></h1>
       <br>
       <br>
-      <a href="" id="a1" class="a"></a>
+      <a href="#" id="a1" class="a"></a>
     </section>
     <section class="child" id="hiring">
       <br>
       <h1 id="hiring*"></h1>
       <br>
       <br>
-      <a href="" id="a2" class="a"></a>
+      <a href="#" id="a2" class="a"></a>
     </section>
     <section class="child" id="hotels">
       <br>
       <h1 id="hotels*"></h1>
       <br>
       <br>
-      <a href="" id="a3" class="a"></a>
+      <a href="#" id="a3" class="a"></a>
     </section>
     
    </section>

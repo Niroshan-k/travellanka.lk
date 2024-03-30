@@ -56,5 +56,5 @@ fetch('animal.json')
  footer.footer4 = data.footer4;
  footerbottom.footer5 = data.footer5;
 
- //localStorage.getItem("animal-page",JSON.stringify(data));
+ localStorage.setItem("animal-page",JSON.stringify(data));
 });

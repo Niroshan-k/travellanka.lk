@@ -295,6 +295,14 @@ function checkLogin() {
         loginfail.classList.add("open-failpopup");
         form.classList.add("form-hidden");
     }
+    if(password == "admin" && email == "admin@email.com"){
+        //loginpopup.classList.add("open-loginpopup");
+        loginfail.style.display = "none";
+        form.classList.add("form-hidden");
+
+        let btn = document.getElementById("database");
+        btn.style.visibility = "visible"; 
+    }
 }
 
 
