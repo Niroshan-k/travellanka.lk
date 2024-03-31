@@ -231,26 +231,39 @@ fetch('home.json')
       input.value = "";
     }
 */ 
+
     const btn = document.getElementById("section-edit");
     const area = document.getElementById("edit-area");
     const edit = document.getElementById("edit");
     const btnclear = document.getElementById("section-clear");
+    const submit = document.getElementById("submit");
+    const content = document.getElementById("sub-sec1");
+
     btn.addEventListener("click",show);
     btnclear.addEventListener("click",clear);
+    submit.addEventListener("click",editcontent);
 
     const btnI = document.getElementById("section-editI");
     const areaI = document.getElementById("edit-areaI");
     const editI = document.getElementById("editI");
     const btnclearI = document.getElementById("section-clearI");
+    const submitI = document.getElementById("submitI");
+    const contentI = document.getElementById("sub-sec2");
+
     btnI.addEventListener("click",show1);
     btnclearI.addEventListener("click",clear1);
+    submitI.addEventListener("click",editcontent1);
 
     const btnII = document.getElementById("section-editII");
     const areaII = document.getElementById("edit-areaII");
     const editII = document.getElementById("editII");
     const btnclearII = document.getElementById("section-clearII");
+    const submitII = document.getElementById("submitII");
+    const contentII = document.getElementById("sub-sec3");
+
     btnII.addEventListener("click",show2);
     btnclearII.addEventListener("click",clear2);
+    submitII.addEventListener("click",editcontent2);
 
     function show() {
       area.value = data.subsec1;
@@ -259,6 +272,16 @@ fetch('home.json')
     function clear() {
       edit.classList.remove("show");
     }
+    function editcontent() {
+      let newuser = area.value;
+      section.subsec1 = newuser;
+      content.innerText = newuser;
+      let user = localStorage.getItem("email") + "-subsec1";
+      if(data.subsec1 != newuser ){
+        localStorage.setItem(user,newuser);
+      }
+    }
+
     function show1() {
       areaI.value = data.subsec2;
       editI.classList.add("show");
@@ -266,12 +289,31 @@ fetch('home.json')
     function clear1() {
       editI.classList.remove("show");
     }
+    function editcontent1() {
+      let newuser = areaI.value;
+      section.subsec2 = newuser;
+      contentI.innerText = newuser;
+      let user = localStorage.getItem("email") + "-subsec2";
+      if(data.subsec2 != newuser ){
+        localStorage.setItem(user,newuser);
+      }
+    }
+
     function show2() {
       areaII.value = data.subsec3;
       editII.classList.add("show");
     }
     function clear2() {
       editII.classList.remove("show");
+    }
+    function editcontent2() {
+      let newuser = areaII.value;
+      section.subsec3 = newuser;
+      contentII.innerText = newuser;
+      let user = localStorage.getItem("email") + "-subsec3";
+      if(data.subsec3 != newuser ){
+        localStorage.setItem(user,newuser);
+      }
     }
     
     // Retrieve DOM elements for the first section
@@ -346,9 +388,7 @@ fetch('home.json')
       if (content !== newValue) {
         const user = localStorage.getItem("email");
         localStorage.setItem(user, newValue);
-        edit.innerText = newValue;
-  
-        
+        edit.innerText = newValue; 
       }
     }
 
@@ -360,8 +400,6 @@ fetch('home.json')
       input.value = "";
       hide.classList.remove("edit-visible");
     }
-
-
   })
   
   
