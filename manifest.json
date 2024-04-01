@@ -6,4 +6,6 @@
  "name":"Travel LK",
  "short_name":"Trav.lk",
  "start_url":"/index.html",
- "description":"Travel Lanka (pvt)Ltd."}
+ "description":"Travel Lanka (pvt)Ltd.",
+ "purpose": "maskable"
+}
